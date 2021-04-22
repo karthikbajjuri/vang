@@ -76,7 +76,7 @@ public class HelloWorldModel {
         myText = mySiteService.evaluate(message,heading);
 
     }
-
+//this is a test line
     public String getMessage() {
         return message;
     }
