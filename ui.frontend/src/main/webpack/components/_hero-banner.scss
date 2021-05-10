@@ -10,6 +10,7 @@ h2.cmp-teaser__title {
     width: 57%;
     bottom: auto !important;
     padding: 3.875rem !important;
+    background: none !important;
 }
 
  
@@ -18,9 +19,13 @@ h2.cmp-teaser__title {
     background-color: #000;
     border-radius: 25px;
     text-transform: initial;
-    padding: 0.65rem 2rem;
+    padding: 0.65rem 3rem;
+    border: none;
 }
 
+.cmp-teaser__title-link:hover {
+    color: #fff !important;
+}
  
 
 .cmp-teaser__description h3 {
