@@ -23,15 +23,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.mysite</groupId>
-        <artifactId>mysite</artifactId>
+        <groupId>com.vanguard</groupId>
+        <artifactId>vanguard</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>mysite.ui.tests</artifactId>
-    <name>My Site - UI Tests</name>
-    <description>UI Tests for My Site</description>
+    <artifactId>vanguard.ui.tests</artifactId>
+    <name>Vanguard - UI Tests</name>
+    <description>UI Tests for Vanguard</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,6 +41,7 @@
         <npm.version>6.14.4</npm.version>
 
         <HEADLESS_BROWSER>false</HEADLESS_BROWSER>
+        <REPORTS_PATH>${project.basedir}/target/reports</REPORTS_PATH>
 
         <!-- AEMaaCS UI testing convention properties -->
         <AEM_AUTHOR_URL>http://localhost:4502</AEM_AUTHOR_URL>
@@ -62,11 +63,6 @@
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -93,7 +89,6 @@
                     <descriptors>
                         <descriptor>${project.basedir}/assembly-ui-test-docker-context.xml</descriptor>
                     </descriptors>
-                    <tarLongFileMode>gnu</tarLongFileMode>
                 </configuration>
                 <executions>
                     <execution>
@@ -160,6 +155,7 @@
                                 <AEM_PUBLISH_PASSWORD>${AEM_PUBLISH_PASSWORD}</AEM_PUBLISH_PASSWORD>
                                 <SELENIUM_BROWSER>${SELENIUM_BROWSER}</SELENIUM_BROWSER>
                                 <HEADLESS_BROWSER>${HEADLESS_BROWSER}</HEADLESS_BROWSER>
+                                <REPORTS_PATH>${REPORTS_PATH}</REPORTS_PATH>
                             </environmentVariables>
                         </configuration>
                     </plugin>
@@ -248,6 +244,7 @@
                                         <AEM_PUBLISH_PASSWORD>${AEM_PUBLISH_PASSWORD}</AEM_PUBLISH_PASSWORD>
                                         <SELENIUM_BROWSER>${SELENIUM_BROWSER}</SELENIUM_BROWSER>
                                         <HEADLESS_BROWSER>${HEADLESS_BROWSER}</HEADLESS_BROWSER>
+                                        <REPORTS_PATH>${REPORTS_PATH}</REPORTS_PATH>
                                     </environmentVariables>
                                     <arguments>
                                         <argument>-f</argument>

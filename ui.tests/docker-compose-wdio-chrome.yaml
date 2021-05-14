@@ -32,9 +32,9 @@ services:
       - SHARED_FOLDER=/tmp/shared
       - HEADLESS_BROWSER
     volumes:
-      - ./reports:/tmp/reports
+      - ./target/reports:/tmp/reports
       - 'shared:/tmp/shared'
-    image: 'com.mysite-mysite.ui.tests/ui.tests:latest'
+    image: 'com.vanguard-vanguard.ui.tests/ui.tests:latest'
   selenium-chrome:
     image: 'selenium/standalone-chrome-debug:latest'
     ports:

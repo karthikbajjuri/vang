@@ -1,8 +1,8 @@
 
 //== Font
 
-$font-family:           "Mark Pro";
-$font-size:             100%;
+$font-family:           "Mark Pro", Helvetica, Arial, sans-serif;
+$font-size:             16px;
 $font-height:           1.5;
 
 //== Color
@@ -11,6 +11,25 @@ $font-height:           1.5;
 $color-foreground:      #202020;
 $color-background:      #ECECEC;
 $color-link:            #2020E0;
+
+$color-dim-grey: #6C6C6C;
+$color-snow: #F9F9F9;
+$color-matterhorn: #545454;
+$color-whisper: #EAEAEA;
+$color-3a3a3a: #3A3A3A;
+$color-d1d1d1: #D1D1D1;
+$color-232323: #232323;
+$color-979797: #979797;
+$color-040505: #040505;
+$color-ffffff: #FFFFFF;
+$color-def5f0: #DEF5F0;
+$color-007873: #007873;
+$color-fff7de: #FFF7DE;
+$color-bf8200: #BF8200;
+$color-ffeded: #FFEDED;
+$color-c20029: #C20029;
+
+
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);

@@ -18,11 +18,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mysite</groupId>
-    <artifactId>mysite</artifactId>
+    <groupId>com.vanguard</groupId>
+    <artifactId>vanguard</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <description>My Site</description>
+    <description>Vanguard</description>
 
     <modules>
         <module>all</module>
@@ -46,11 +46,12 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
+        <core.wcm.components.version>2.15.2</core.wcm.components.version>
+
         <bnd.version>5.1.2</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2021.3.5104.20210328T185548Z-210325</aem.sdk.api>
-        <componentGroupName>My Site</componentGroupName>
+        <componentGroupName>Vanguard</componentGroupName>
     </properties>
 
     <build>
@@ -110,6 +111,14 @@
         </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <configuration>
+                        <tarLongFileMode>posix</tarLongFileMode>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <groupId>com.github.eirslett</groupId>
                     <artifactId>frontend-maven-plugin</artifactId>
@@ -245,7 +254,7 @@ Bundle-DocURL:
                 <plugin>
                     <groupId>org.apache.sling</groupId>
                     <artifactId>htl-maven-plugin</artifactId>
-                    <version>1.3.4-1.4.0</version>
+                    <version>2.0.2-1.4.0</version>
                     <configuration>
                         <failOnWarnings>true</failOnWarnings>
                     </configuration>
@@ -255,12 +264,9 @@ Bundle-DocURL:
                     <groupId>org.apache.jackrabbit</groupId>
                     <artifactId>filevault-package-maven-plugin</artifactId>
                     <extensions>true</extensions>
-                    <version>1.1.4</version>
+                    <version>1.1.6</version>
                     <configuration>
                         <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
-                        <properties>
-                            <cloudManagerTarget>none</cloudManagerTarget>
-                        </properties>
                         <validatorsSettings>
                             <jackrabbit-nodetypes>
                                 <options>
@@ -274,11 +280,17 @@ Bundle-DocURL:
                         <dependency>
                             <groupId>biz.netcentric.aem</groupId>
                             <artifactId>aem-nodetypes</artifactId>
-                            <version>6.5.5.0</version>
+                            <version>6.5.7.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
-
+                <!-- AEM Analyser Plugin -->
+                <plugin>
+                    <groupId>com.adobe.aem</groupId>
+                    <artifactId>aemanalyser-maven-plugin</artifactId>
+                    <version>${aemanalyser.version}</version>
+                    <extensions>true</extensions>
+                </plugin>
                 <!-- Content Package Plugin -->
                 <plugin>
                     <groupId>com.day.jcr.vault</groupId>
@@ -550,6 +562,7 @@ Bundle-DocURL:
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
+            <!-- OSGi Dependencies -->
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.annotation.versioning</artifactId>
@@ -611,6 +624,12 @@ Bundle-DocURL:
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.tracker</artifactId>
+                <version>1.5.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.servlets.annotations</artifactId>
                 <version>1.2.4</version>
@@ -633,8 +652,7 @@ Bundle-DocURL:
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.5.0</version>
-                <classifier>apis</classifier>
+                <version>6.5.8</version>
                 <scope>provided</scope>
             </dependency>
             <!-- Apache Sling Dependencies -->
@@ -696,48 +714,7 @@ Bundle-DocURL:
                 <version>${core.wcm.components.version}</version>
             </dependency>
 
-            <!-- Sling Dynamic Include -->
-            <dependency>
-                <groupId>org.apache.sling</groupId>
-                <artifactId>org.apache.sling.dynamic-include</artifactId>
-                <version>3.1.6</version>
-            </dependency>
 
-            <!-- ACS Commons -->
-
-            <dependency>
-                <groupId>com.adobe.acs</groupId>
-                <artifactId>acs-aem-commons-bundle</artifactId>
-                <version>4.8.4</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!-- Lombok -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.12</version>
-            </dependency>
-
-            <!-- Vanity urls-->
-            <dependency>
-                <groupId>com.adobe</groupId>
-                <artifactId>vanityurls-content</artifactId>
-                <version>1.0.2</version>
-                <type>zip</type>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.aem</groupId>
-                <artifactId>aem-sdk-api</artifactId>
-                <version>${aem.sdk.api}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <artifactId>cq-wcm-api</artifactId>
-                <version>5.12.26</version>
-                <groupId>com.day.cq.wcm</groupId>
-                <scope>provided</scope>
-            </dependency>
             <!-- Testing -->
             <dependency>
                 <groupId>org.junit</groupId>
@@ -776,12 +753,7 @@ Bundle-DocURL:
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <artifactId>org.apache.sling.api</artifactId>
-                <version>2.18.4</version>
-                <groupId>org.apache.sling</groupId>
-                <scope>provided</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

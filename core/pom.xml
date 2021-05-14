@@ -18,14 +18,14 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.mysite</groupId>
-        <artifactId>mysite</artifactId>
+        <groupId>com.vanguard</groupId>
+        <artifactId>vanguard</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>mysite.core</artifactId>
-    <name>My Site - Core</name>
-    <description>Core bundle for My Site</description>
+    <artifactId>vanguard.core</artifactId>
+    <name>Vanguard - Core</name>
+    <description>Core bundle for Vanguard</description>
     <build>
         <plugins>
             <plugin>
@@ -43,14 +43,7 @@
                         </goals>
                         <configuration>
                             <bnd><![CDATA[
-                            -exportcontents: com.mysite.core.*
-                            -includepackage: org.jsoup.*
-                            -dsannotations-options: inherit
-                             Sling-Initial-Content: \
-                             SLING-INF/content;path:=/content,\
-                             SLING-INF/etc;path:=/etc
-                             Sling-Model-Packages: com.mysite.core
-                             Import-Package:javax.annotation;version=0.0.0,*;resolution:=optional
+Import-Package: javax.annotation;version=0.0.0,*
                                 ]]></bnd>
                         </configuration>
                     </execution>
@@ -88,6 +81,12 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>uk.org.lidalia</groupId>
+            <artifactId>slf4j-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- OSGi Dependencies -->
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.annotation.versioning</artifactId>
@@ -128,6 +127,10 @@
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.resource</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.util.tracker</artifactId>
+        </dependency>
         <!-- Other Dependencies -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -152,32 +155,14 @@
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.models.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>uk.org.lidalia</groupId>
-            <artifactId>slf4j-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-sdk-api</artifactId>
-        </dependency>
-        <dependency>
-            <artifactId>org.apache.sling.api</artifactId>
-            <groupId>org.apache.sling</groupId>
-        </dependency>
-        <dependency>
-            <artifactId>cq-wcm-api</artifactId>
-            <groupId>com.day.cq.wcm</groupId>
         </dependency>
 
 
