@@ -37,24 +37,7 @@
 .cmp-teaser__title-link {
   text-decoration: none;
 }
-.cmp-teaser__content .cmp-teaser__action-link {
-  background-color: #000;
-  border-radius: 25px;
-  padding: 0.65rem 2.2rem;
-  border: none;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin: 1.625rem 0.1875rem 0 0;
-  font-size: 0.725rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-color: #fff;
-  color: #fff;
-  text-transform: initial;
-}
-.cmp-teaser__action-link:hover {
-  text-decoration: underline;
-}
+
 .cmp-teaser__title-link {
   color: #fff;
 }
@@ -117,4 +100,86 @@ h6.cmp-title__text {
   .cmp-teaser__content {
     width: 80%;
   }
+}
+
+.cmp-teaser .cmp-teaser__action-link {
+     background-color: #000;
+     border-radius: 100px;
+     padding: 14px 24px;
+     border: none;
+     letter-spacing: 1px;
+     display: inline-block;
+     margin-top: 30px;
+     font-size: 18px;
+     font-weight: normal;
+     line-height: 16px;
+     border-color: #fff;
+     color: #fff;
+     text-transform: initial;
+     text-decoration: none;
+}
+.cmp-teaser .cmp-teaser__title-link {
+     text-decoration: none;
+     cursor: pointer;
+}
+.cmp-teaser .cmp-teaser__action-link:hover {
+     text-decoration: underline;
+}
+.vg-banner--component .cmp-image__image {
+     width: 100%;
+     display: block;
+     height: 583px;
+}
+.vg-banner--component .cmp-teaser__image~.cmp-teaser__content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     min-height: auto;
+     min-width: auto
+}
+.vg-banner--component .cmp-teaser__title {
+     width: 544px;
+     text-align: left;
+     opacity: 1;
+     padding: 0;
+     margin: 0;
+     font-size: 60px;
+     line-height: 50px;
+     font-family: 'Mark Pro Heavy';
+     letter-spacing: 0px;
+     color: #000000;
+}
+.vg-banner--component .cmp-teaser__title-link {
+     color: #000;
+}
+.vg-banner--component .cmp-teaser__content {
+     bottom: auto;
+     padding: 125px 112px;
+     background: none;
+}
+.vg-banner--component .cmp-teaser__description p {
+     margin: 20px 0;
+     width: 667px;
+     text-align: left;
+     font: normal normal normal 25px/30px Mark Pro;
+     letter-spacing: 0px;
+     color: #000000;
+}
+@media screen and (max-width: 768px) {
+     .vg-banner--component .cmp-teaser__content {
+         font-size: 12px;
+         width: 80%;
+    }
+     .vg-banner--component .cmp-teaser__title {
+         font-size: 2.75rem;
+    }
+     .vg-banner--component .cmp-teaser__content {
+         padding: 1.875rem;
+    }
+}
+@media screen and (max-width: 900px) {
+     .vg-banner--component .cmp-teaser__content {
+         width: 80%;
+    }
 }
