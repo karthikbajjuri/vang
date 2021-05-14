@@ -31,3 +31,29 @@ select,
 textarea {
     font: inherit;
 }
+/*Generic style*/
+@font-face {
+    font-family: Mark Pro;
+	font-style: normal;
+    font-weight: normal;
+    //src: url("./fonts/MARKPRO.OTF") format("opentype");
+    src: url("/etc.clientlibs/mysite/clientlibs/clientlib-site/resources/fonts/MARKPRO.OTF") format("opentype")
+}
+@font-face {
+    font-family: Mark Pro Black;
+	font-style: normal;
+    font-weight: normal;
+    src: url("/etc.clientlibs/mysite/clientlibs/clientlib-site/resources/fonts/MARKPROBLACK.OTF") format("opentype");
+}
+@font-face {
+    font-family: Mark Pro Bold;
+	font-style: normal;
+    font-weight: bold;
+    src: url("/etc.clientlibs/mysite/clientlibs/clientlib-site/resources/fonts/MARKPROBOLD.OTF") format("opentype");
+}
+@font-face {
+    font-family: Mark Pro Heavy;
+	font-style: normal;
+    font-weight: bold;
+    src: url("/etc.clientlibs/mysite/clientlibs/clientlib-site/resources/fonts/MARKPROHEAVY.OTF") format("opentype");
+}
