@@ -1,24 +1,35 @@
 .gridComponentTextRight .real {
   padding: 0 75px;
 }
-.gridComponentTextRight {
-  background-color: #f9f9f9;
-  padding:60px;
-}
 .gridComponentTextLeft {
-  background-color: #ffffff;
-  padding:60px;
+    background-color: #ffffff;
+    padding: 28px 0 38px 0;
 }
+.gridComponentTextRight {
+    background-color: #f9f9f9;
+    padding: 28px 0 38px 0;
+}
+
+
 .grid-comp{
   text-align: center;
   display: flex;
 }
-.grid-comp p{
-  font-size: 25px;
-  font: normal normal bold 25px/44px Mark Pro;
-
-
+.grid-comp p {
+    font-size: 25px;
+    font: normal normal bold 25px/44px Mark Pro Bold;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    text-transform: uppercase;
 }
+.grid-comp p:first-child {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5% 4% 2% 4%;
+    min-height: 60pt;
+}
+
 @media screen and (max-width: 768px) {
 .grid-comp{
   display: block;
@@ -26,4 +37,12 @@
 .grid-comp p{
   font-size: 20px;
 }
+.grid-comp p:first-child {
+    width: 90%;
+    min-height: auto;
+}
+.gridComponentTextLeft, .gridComponentTextRight {
+    width: 100%;
+}
+
 }
