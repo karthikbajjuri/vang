@@ -1,0 +1,29 @@
+.gridComponentTextRight .real {
+  padding: 0 75px;
+}
+.gridComponentTextRight {
+  background-color: #f9f9f9;
+  padding:60px;
+}
+.gridComponentTextLeft {
+  background-color: #ffffff;
+  padding:60px;
+}
+.grid-comp{
+  text-align: center;
+  display: flex;
+}
+.grid-comp p{
+  font-size: 25px;
+  font: normal normal bold 25px/44px Mark Pro;
+
+
+}
+@media screen and (max-width: 768px) {
+.grid-comp{
+  display: block;
+}
+.grid-comp p{
+  font-size: 20px;
+}
+}

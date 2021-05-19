@@ -1,2 +1,14 @@
 .cmp-text {}
 .cmp-text__paragraph {}
+.maroon-colour {
+    color : #c20029;
+}
+.number {
+    font-family: Mark Pro;
+    font-size:72px;
+}
+  @media screen and (max-width: 768px) {
+    .number {
+        font-size:44px;
+      }
+  }

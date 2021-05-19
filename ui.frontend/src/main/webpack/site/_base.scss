@@ -1,13 +1,24 @@
 //== Base
+@import 'reset';
 
 html,
 body {
     margin: 0;
+    overflow-x: hidden !important;
     font-size:   $font-size;
     font-family: $font-family;
     line-height: $font-height;
     color:       $color-foreground;
     background:  $color-background;
+    .element {
+        vertical-align:baseline;
+        *vertical-align:middle;
+        *overflow:visible;
+        margin:0;
+        // font-family:inherit;
+        // font-size:inherit;
+        // line-height:inherit;
+    }
 
     @media (prefers-color-scheme: dark) {
         color:       $color-foreground-dark;
