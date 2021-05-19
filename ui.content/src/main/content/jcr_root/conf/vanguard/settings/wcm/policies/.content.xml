@@ -88,6 +88,30 @@
                             <formats
                                 jcr:primaryType="nt:unstructured"
                                 override="true">
+                                <default_h1
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 1"
+                                    tag="h1"/>
+                                <default_h2
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 2"
+                                    tag="h2"/>
+                                <default_h3
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 3"
+                                    tag="h3"/>
+                                <default_h4
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 4"
+                                    tag="h4"/>
+                                <default_h5
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 5"
+                                    tag="h5"/>
+                                <default_h6
+                                    jcr:primaryType="nt:unstructured"
+                                    description="heading 6"
+                                    tag="h6"/>
                                 <item0
                                     jcr:primaryType="nt:unstructured"
                                     description="Paragraph"
