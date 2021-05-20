@@ -4,8 +4,7 @@
   width: 100%;
   overflow: hidden;
   color: #fff;
-  .cmp-teaser__image {
-    & ~ .cmp-teaser__content {
+    .cmp-teaser__content {
       position: absolute;
       top: 0;
       left: 0;
@@ -13,7 +12,6 @@
       min-height: auto;
       min-width: auto;
     }
-  }
   .cmp-teaser__title {
     width: 462px;
     color: #000;
@@ -79,69 +77,67 @@
     }
   }
 }
+/**** Expert Start *********/
 .vg-expert--component {
-  .cmp-teaser {
-    background: #fff;
-    width: 100%;
-    height: 586px;
-  }
-  .cmp-teaser__image {
-    float: left;
-    width: 50%;
-    display: block;
-    clear: both;
-    & ~ .cmp-teaser__content {
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      min-height: auto;
-      min-width: auto;
-      width: 50%;
-      float: right;
+    .cmp-image__image {
+    	display: block;
+    	height: auto;
+    	text-align: center;
+    	margin: 0 auto;
     }
-  }
-  .cmp-image__image {
-    display: block;
-    width: 411px;
-    height: 425px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .cmp-teaser__title {
-    width: 533px;
-    text-align: left;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
-    font-size: 60px;
-    line-height: 74px;
-    font-family: "Mark Pro Heavy";
-    letter-spacing: 0px;
-    color: #232323;
-  }
-  .cmp-teaser__title-link {
-    color: #000;
-    &:hover {
-      color: #000;
+	.cmp-teaser {
+		background: #fff;
+		width: 100%;
+		&__image {
+			float: left;
+			width: 50%;
+			display: block;
+			clear: both;
+		}
+		&__content {
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				min-height: auto;
+				min-width: auto;
+				width: 50%;
+				float: right;
+				bottom: auto;
+				padding: 174px 0px 225px 0;
+				background: none;
+		}
+		&__title {
+			width: 533px;
+			text-align: left;
+			opacity: 1;
+			padding: 0;
+			margin: 0;
+			font-size: 60px;
+			line-height: 74px;
+			font-family: 'Mark Pro Heavy';
+			letter-spacing: 0px;
+			color: #232323;
+		}
+		&__title-link {
+			color: #000;
+			&:hover {
+			  color: #000;
+		    }
+		}
+		&__description p {
+			margin: 34px 0;
+			width: auto;
+			text-align: left;
+			font: normal normal normal 25px/30px Mark Pro;
+			letter-spacing: 0px;
+			color: #000000;
+		}
     }
-  }
-  .cmp-teaser__content {
-    bottom: auto;
-    padding: 174px 112px 225px 0;
-    background: none;
-  }
-  .cmp-teaser__description {
-    p {
-      margin: 34px 0;
-      width: 667px;
-      text-align: left;
-      font: normal normal normal 25px/30px Mark Pro;
-      letter-spacing: 0px;
-      color: #000000;
-    }
-  }
 }
+/**** Expert END *********/
+
+/**** Banner Start *********/
 .vg-banner--component {
   .cmp-teaser {
     background: #fff7de;
@@ -203,7 +199,7 @@
     }
   }
 }
-
+/**** Banner End *********/
 @media screen and (max-width: 768px) {
   .cmp-teaser {
     .cmp-teaser__content {
@@ -253,6 +249,32 @@
     width: 100%;
     margin: 0 auto;
   }
+  /*** Expert Start ****/
+  .vg-expert--component {
+      .cmp-image__image {
+          height: 350px;
+          width: 100%;
+      }
+      .cmp-teaser {
+           margin-bottom: 60px;
+          &__image {
+              width: 100%;
+          }
+          &__title {
+            color: #232323;
+          }
+          &__content {
+              width: 100%;
+              padding: 35px 35px 0  35px;
+              float: left;
+              }
+
+          &__description p {
+              color: #000;
+          }
+      }
+  }
+  /*** Expert END ****/
   .vg-banner--component {
     .cmp-teaser {
       min-height: 810px;
