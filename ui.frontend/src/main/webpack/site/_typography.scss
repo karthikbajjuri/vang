@@ -1,6 +1,26 @@
 //@import 'utils';
 
-@include font-face('Mark Pro', '../resources/fonts/MARKPRO', normal, normal, otf);
-@include font-face('Mark Pro Black', '../resources/fonts/MARKPROBLACK', normal, normal, otf);
-@include font-face('Mark Pro Bold', '../resources/fonts/MARKPROBOLD', bold, normal, otf);
-@include font-face('Mark Pro Heavy', '../resources/fonts/MARKPROHEAVY', bold, normal, otf);
+@font-face {
+    font-family: Mark Pro;
+	font-style: normal;
+    font-weight: normal;
+    src: url("/etc.clientlibs/vanguard/clientlibs/clientlib-site/resources/fonts/MARKPRO.otf") format("opentype")
+}
+@font-face {
+    font-family: Mark Pro Black;
+	font-style: normal;
+    font-weight: normal;
+    src: url("/etc.clientlibs/vanguard/clientlibs/clientlib-site/resources/fonts/MARKPROBLACK.otf") format("opentype");
+}
+@font-face {
+    font-family: Mark Pro Bold;
+	font-style: normal;
+    font-weight: bold;
+    src: url("/etc.clientlibs/vanguard/clientlibs/clientlib-site/resources/fonts/MARKPROBOLD.otf") format("opentype");
+}
+@font-face {
+    font-family: Mark Pro Heavy;
+	font-style: normal;
+    font-weight: bold;
+    src: url("/etc.clientlibs/vanguard/clientlibs/clientlib-site/resources/fonts/MARKPROHEAVY.otf") format("opentype");
+}
