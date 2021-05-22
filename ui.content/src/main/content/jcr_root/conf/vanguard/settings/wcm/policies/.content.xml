@@ -349,7 +349,12 @@
                                 <item1
                                     cq:styleClasses="vg-banner--component"
                                     cq:styleId="1550165685463"
-                                    cq:styleLabel="Banner"
+                                    cq:styleLabel="Insights Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="vg-pressinquiries--component"
+                                    cq:styleId="1550165685464"
+                                    cq:styleLabel="Press Inquiries"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
