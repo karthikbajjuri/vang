@@ -55,6 +55,7 @@
             	padding-left: 0rem;
             	li{
                     list-style-type: none;
+                    margin: 10px 0;
                     .arrow{
                         color:#C20029;
                     }
@@ -68,4 +69,38 @@
             }
         }
     }
+}
+@media screen and (max-width: 768px) {
+	.vg_data_enables{
+	        &_leftcol_image{
+                padding: 0;
+	        }
+			&_rightcol {
+			padding: 0px 11%;
+			&_title {
+				text-align: left;
+				font: normal normal 900 40px/45px Mark Pro Heavy;
+				letter-spacing: 0px;
+				color: #000000;
+			}
+			&_description {
+				text-align: left;
+				font: normal normal normal 18px/24px Mark Pro;
+				letter-spacing: 0px;
+				color: #000000;
+			}
+			&_list_item_title {
+				text-align: left;
+				font: normal normal bold 20px/25px Mark Pro;
+				letter-spacing: 0px;
+				color: #000000;
+			}
+			&_list_item_col ul a {
+				text-align: left;
+				font: normal normal normal 20px/22px Mark Pro;
+				letter-spacing: 0px;
+				opacity: 1;
+			}
+		}
+	}
 }
