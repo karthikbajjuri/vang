@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/vanguard/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Test"
+        sling:resourceType="vanguard/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="vanguard/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="vanguard/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vanguard/components/container"
+                    layout="responsiveGrid">
+                    <mytest
+                        jcr:created="{Date}2021-05-10T16:19:24.666+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-10T16:51:52.371+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/mytest"
+                        desc="Desc"
+                        iconPosition="flex-column"
+                        linkTarget="_self"
+                        text="Test"
+                        textIsRich="true"/>
+                    <teaser
+                        jcr:created="{Date}2021-05-10T16:28:18.457+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;h3>Fearless Decisions. Better Outcomes&lt;/h3>&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&lt;p>In-depth data to replace hesitation with confidence when it comes to plan desing&lt;/p>&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-05-19T18:05:10.512+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="How America Saves 2021"
+                        sling:resourceType="vanguard/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/dam/firstdata/us/CSAT 2020 Booklet Attestation - All Languages.pdf"
+                                text="Download The Report"/>
+                        </actions>
+                    </teaser>
+                    <embed_copy
+                        jcr:created="{Date}2021-05-17T15:56:06.180+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-23T16:07:17.390+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/embed"
+                        html="&lt;div class=&quot;cmp-inpage-navigation&quot;>&#xd;&#xa;    &lt;div class=&quot;cmp-scrollnavigation navbar-dark &quot; id=&quot;stickynavigation&quot;>&#xd;&#xa;        &lt;section class=&quot;custom-container&quot;>&#xd;&#xa;            &lt;nav class=&quot;cmp-scrollnavigation__block navbar-expand aem-Grid aem-Grid--12&quot;>&#xd;&#xa;                &lt;ul class=&quot;cmp-scrollnavigation__list navbar-nav animate-fadeInUp aem-Grid aem-Grid--12&quot; id=&quot;stickynav&quot; style=&quot;&#xd;&#xa;&#x9;&#x9;&#x9;&#x9;   &quot;>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>Automatic Solutions&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>Advice Solutions&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>The Retiree-friendly Plan&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>Loans and Withdrawals&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>2021 REPORT&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                    &lt;li class=&quot;cmp-scrollnavigation__item nav-item aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12&quot;>&#xd;&#xa;                        &lt;a class=&quot;cmp-scrollnavigation__link nav-link&quot;>INDUSTRY REPORTS&lt;/a>&#xd;&#xa;                    &lt;/li>&#xd;&#xa;                &lt;/ul>&#xd;&#xa;            &lt;/nav>&#xd;&#xa;        &lt;/section>&#xd;&#xa;    &lt;/div>&#xd;&#xa;&lt;/div>"
+                        type="html"/>
+                    <gridcomponent
+                        jcr:created="{Date}2021-05-23T16:18:27.498+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-23T16:18:27.498+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/gridcomponent">
+                        <text-1
+                            jcr:lastModified="{Date}2021-05-23T16:19:22.214+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="vanguard/components/text"
+                            text="&lt;p>Real data powered by&lt;/p>&#xd;&#xa;&lt;p>&lt;span class=&quot;number&quot;>20 years&lt;/span>&lt;/p>&#xd;&#xa;&lt;p>&lt;span class=&quot;maroon-colour&quot;>of How America Saves&lt;/span>&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text-2
+                            jcr:lastModified="{Date}2021-05-23T16:19:59.938+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="vanguard/components/text"
+                            text="&lt;p>&lt;span class=&quot;number&quot;>5,000,000&lt;/span>&lt;/p>&#xd;&#xa;&lt;p>&lt;span class=&quot;maroon-colour&quot;>participants achieving real results&lt;/span>&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </gridcomponent>
+                    <embed_copy_1733325806
+                        jcr:created="{Date}2021-05-18T11:48:05.359+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-23T12:06:22.704+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/embed"
+                        html="&lt;div class=&quot;vg-blockquote aem-Grid aem-Grid--12&quot;>&#xd;&#xa;         &lt;div class=&quot;vg-blockquote__content&quot;>&#xd;&#xa;            &lt;div class=&quot;vg-blockquote__title&quot;>&#xd;&#xa;               &lt;h2 class=&quot;vg-blockquote__main-title&quot;>Data integrity that empowers&lt;/h2>&#xd;&#xa;               &lt;p class=&quot;vg-blockquote__subtitle&quot;>You can only trust data when you know for certain it’s deep, transparent and thorough. Because it’s real.&lt;/p>&#xd;&#xa;            &lt;/div>&#xd;&#xa;            &lt;div class=&quot;vg-blockquote__quote&quot;>&#xd;&#xa;               &lt;p class=&quot;vg-blockquote__quote-text&quot;>Get inspired about the decisions you make to help your people and business experience better outcomes.&lt;/p>&#xd;&#xa;            &lt;/div>&#xd;&#xa;            &lt;div class=&quot;vg-blockquote__description&quot;>&#xd;&#xa;               &lt;p>For more than 20 years, we have assembled unbiased participant data derived from 1,800 plans, 1,500 clients and 5 million participants. How America Saves remains the only research that shares the reality of what’s possible in retirement investment success.&lt;/p>&#xd;&#xa;&#x9;&#x9;&#x9;   &lt;p>Afterall, it’s all about helping participants achieve their retirement vision.&lt;/p>&#xd;&#xa;            &lt;/div>&#xd;&#xa;         &lt;/div>&#xd;&#xa;&lt;/div>"
+                        type="html"/>
+                    <teaser_copy
+                        cq:styleIds="[1550165685463]"
+                        jcr:created="{Date}2021-05-14T11:32:07.242+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>HAS is in its 20th year of serving plan sponsors. And we can say proudly and accurately say that 401(k) plans are designed better today than they ever have been. Our Insights to Action translates undeniably trustworthy data into a clear path forward to better plan design.&lt;/p>&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-05-22T15:49:54.382+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Insights to Action"
+                        sling:resourceType="vanguard/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/dam/firstdata/us/CSAT 2020 Booklet Attestation - All Languages.pdf"
+                                text="Download Insights to Action Report"/>
+                        </actions>
+                    </teaser_copy>
+                    <embed_copy_1349667329
+                        jcr:created="{Date}2021-05-22T14:34:51.507+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-23T13:31:29.818+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/embed"
+                        html="&lt;div class=&quot;vg_data_enables aem-Grid aem-Grid--12&quot;>&#xd;&#xa;    &lt;div class=&quot;aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 vg_data_enables_leftcol&quot;>&#xd;&#xa;        &lt;img class=&quot;vg_data_enables_leftcol_image&quot; src=&quot;/content/dam/vanguard/book.png&quot;/>&#xd;&#xa;        &lt;div class=&quot;vg_data_enables_leftcol_action-container&quot;>&#xd;&#xa;            &lt;a class=&quot;vg_data_enables_leftcol_action-link&quot; href=&quot;/content/vanguard/us/en.html&quot;>Download 2021 Report&lt;/a>&#xd;&#xa;        &lt;/div>&#xd;&#xa;    &lt;/div>&#xd;&#xa;    &lt;div class=&quot;aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 vg_data_enables_rightcol&quot;>&#xd;&#xa;        &lt;h2 class=&quot;vg_data_enables_rightcol_title&quot;>Data that enables, not overloads&lt;/h2>&#xd;&#xa;        &lt;p class=&quot;vg_data_enables_rightcol_description&quot;>Ensuring a plan design is the best it can be is daunting. Without the proper guidance, plan sponsors must fend for themselves. Vanguard has your back.&lt;/p>&#xd;&#xa;        &lt;div class=&quot;vg_data_enables_rightcol_list_item&quot;>&#xd;&#xa;            &lt;p class=&quot;vg_data_enables_rightcol_list_item_title&quot;>Benchmark Reports by Industry&lt;/p>&#xd;&#xa;            &lt;div class=&quot;aem-Grid aem-Grid--12&quot;>&#xd;&#xa;                &lt;div class=&quot; aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 vg_data_enables_rightcol_list_item_col&quot;>&#xd;&#xa;                    &lt;ul>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Ambulatory health care services &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Architecture &amp; engineering &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Construction &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Finance &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Information &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Mining, oil, &amp; gas extraction &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Retail trade&lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                    &lt;/ul>&#xd;&#xa;                &lt;/div>&#xd;&#xa;                &lt;div class=&quot;aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 vg_data_enables_rightcol_list_item_col&quot;>&#xd;&#xa;                    &lt;ul>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Insurance&lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Legal services &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Manufacturing &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Technology &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Transportation and warehousing &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Unions &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Utilities &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                        &lt;li>&lt;a href=&quot;#&quot;>Wholesale trade &lt;span class=&quot;arrow&quot;>➔&lt;/span>&lt;/a>&lt;/li>&#xd;&#xa;                    &lt;/ul>&#xd;&#xa;                &lt;/div>&#xd;&#xa;            &lt;/div>&#xd;&#xa;        &lt;/div>&#xd;&#xa;    &lt;/div>&#xd;&#xa;&lt;/div>"
+                        type="html"/>
+                    <teaser_2015461017
+                        cq:styleIds="[1550165685464]"
+                        jcr:created="{Date}2021-05-19T18:04:11.660+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>How Americas Saves is a trusted source for the most comprehensive retirement plan data. Contact our PR team to speak directly with a HAS expert.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-05-22T12:44:01.804+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Press Inquiries"
+                        sling:resourceType="vanguard/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/dam/firstdata/us/CSAT 2020 Booklet Attestation - All Languages.pdf"
+                                text="Our Press Room"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/dam/firstdata/us/CSAT 2020 Booklet Attestation - All Languages.pdf"
+                                text="Email Media Relations"/>
+                        </actions>
+                    </teaser_2015461017>
+                    <embed_copy_304235727
+                        jcr:created="{Date}2021-05-17T15:56:06.180+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-20T13:05:19.922+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vanguard/components/embed"
+                        html="&lt;br/>&#xd;&#xa;&lt;br/>&#xd;&#xa;&lt;br/>&#xd;&#xa;&lt;br/>&#xd;&#xa;&lt;br/>"
+                        type="html"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
