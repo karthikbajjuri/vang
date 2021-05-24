@@ -1,6 +1,13 @@
 .vg-blockquote {
     position: relative;
 	background: #FFEDED 0% 0% no-repeat padding-box;
+	&__v-image {
+      position: absolute;
+      right: 12px;
+      width: 45%;
+      height: 652px;
+      margin-top: 25px;
+    }
 	&__content {
 		color: #000;
         padding: 7%;
@@ -34,10 +41,32 @@
         letter-spacing: 0px;
         color: #000000;
     }
+    &__background__red {
+        background: #c20029 0% 0% no-repeat padding-box;
+    }
+    &__content__white{
+        color:#FFFFFF;
+        position:relative;
+    }
+    &__v-image-leftdoublequote{
+        padding-top: 25%;
+        position: absolute;
+        width: 172px;
+    }
+    &__v-image-rightdoublequote{
+        position: absolute;
+        right: 7%;
+        top: 39%;
+        width: 172px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .vg-blockquote{
+        &__v-image {
+            width: 72%;
+            height: 430px;
+        }
         &__content {
             padding: 60px 6%;
         }
@@ -49,14 +78,12 @@
             text-align: left;
             font: normal normal normal 18px/24px Mark Pro;
             letter-spacing: 0px;
-            color: #000000;
         }
         &__main-title{
             width: 100%;
             text-align: left;
             font: normal normal 900 40px/45px Mark Pro Heavy;
             letter-spacing: -0.6px;
-            color: #000000;
             margin-bottom: 20px;
         }
         &__quote-text{
@@ -64,7 +91,6 @@
             text-align: left;
             font: normal normal 900 45px/50px Mark Pro Heavy;
             letter-spacing: 0px;
-            color: #000000;
             margin: 30px 0;
         }
         &__description {
@@ -73,11 +99,12 @@
         	text-align: left;
             font: normal normal normal 18px/24px Mark Pro;
             letter-spacing: 0px;
-            color: #000000;
             p{
                 margin-bottom: 15px;
             }
         }
     }
-
+    .vg-blockquote__v-image-leftdoublequote, .vg-blockquote__v-image-rightdoublequote{
+        display:none;
+    }
 }
