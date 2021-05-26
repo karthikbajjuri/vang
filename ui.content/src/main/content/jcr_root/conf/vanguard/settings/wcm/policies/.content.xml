@@ -327,6 +327,57 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_4234250003919757
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Container"
+                    components="[group:Vanguard - Content,/apps/vanguard/components/form/container]"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                            <mapping_1575024218483
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="image/*"
+                                droptarget="image"
+                                resourceType="vanguard/components/image"/>
+                            <mapping_1575030843388
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="content"
+                                assetMimetype="text/html"
+                                droptarget="experiencefragment"
+                                resourceType="vanguard/components/experiencefragment"/>
+                            <mapping_1575030853128
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                droptarget="contentfragment"
+                                resourceType="vanguard/components/contentfragment"/>
+                        </assetToComponentMapping>
+                    </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Background Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-background__red "
+                                    cq:styleId="1621932756078"
+                                    cq:styleLabel="Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-background__grey"
+                                    cq:styleId="1621939787232"
+                                    cq:styleLabel="grey"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleId="1621940496124"
+                                    cq:styleLabel="default"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_4234250003919757>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
