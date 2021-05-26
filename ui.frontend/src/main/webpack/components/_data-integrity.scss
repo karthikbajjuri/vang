@@ -1,12 +1,10 @@
 .vg-blockquote {
     position: relative;
-	background: #FFEDED 0% 0% no-repeat padding-box;
+
 	&__v-image {
-      position: absolute;
-      right: 12px;
-      width: 45%;
-      height: 652px;
-      margin-top: 25px;
+    position: absolute;
+    left: 50%;
+    margin-top: -50px;
     }
 	&__content {
 		color: #000;
@@ -41,9 +39,6 @@
         letter-spacing: 0px;
         color: #000000;
     }
-    &__background__red {
-        background: #c20029 0% 0% no-repeat padding-box;
-    }
     &__content__white{
         color:#FFFFFF;
         position:relative;
@@ -59,13 +54,24 @@
         top: 39%;
         width: 172px;
     }
+    &__right-doublequote:after {
+        content: url('/content/dam/vanguard/right-doublequotes.png');
+        position:absolute;
+     }
+     &__left-doublequote:before {
+        left: -9%;
+        content: url('/content/dam/vanguard/left-doublequotes.png');
+        position: absolute;
+        margin-top: 34%;
+     }
 }
 
 @media screen and (max-width: 768px) {
     .vg-blockquote{
         &__v-image {
-            width: 72%;
-            height: 430px;
+        left: 12%;
+        width: 80%;
+        height: 50%;
         }
         &__content {
             padding: 60px 6%;
@@ -103,8 +109,12 @@
                 margin-bottom: 15px;
             }
         }
+        &__right-doublequote:after {
+            display: none;
+         }
+         &__left-doublequote:before {
+            display: none;
+         }
     }
-    .vg-blockquote__v-image-leftdoublequote, .vg-blockquote__v-image-rightdoublequote{
-        display:none;
-    }
+
 }
