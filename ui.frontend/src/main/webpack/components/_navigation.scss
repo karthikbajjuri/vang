@@ -1,83 +1,89 @@
-.cmp-navigation {}
-.cmp-navigation__group {}
-.cmp-navigation__item {}
-.cmp-navigation__item--active {}
-// .cmp-navigation__item--level-0 {}
-.cmp-navigation__item-link {}
-
-.cmp-scrollnavigation {
-    &__list {
-        padding: 0;
-        margin: 0;
+.cmp-inPagenavigation {
+  background-color: #660026;
+  .nav {
+    position: relative;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      @media (min-width: 992px) {
+        justify-content: center;
         display: flex;
-        background-color: #C20029;
-    }
-    &__item {
-        padding: 1.2% 3%;
-        list-style-type: none;
-        text-align: center;
-        text-transform: uppercase;
-        background: #660026 0% 0% no-repeat padding-box;
-        border-top: 0;
-        border-bottom: 0;
-        margin-right: 1px;
-    }
-    &__link.nav-link {
-        text-align: center;
-        font: normal normal bold 18px/21px Mark Pro Bold;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        opacity: 1;
-    }
-    &__link__arrow {
+        flex-flow: row nowrap;
+      }
+      @media (max-width: 991px) {
         display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 0 36px;
+        left: 0;
+        right: 0;
+        top: 100%;
+        box-shadow: 0px 3px 6px #00000029;
+      }
+      li {
+        position: relative;
+        box-sizing: border-box;
+        @media (min-width: 992px) {
+          flex: 1 1 0;
+          border-right: 1px solid #840024;
+        }
+        &:last-child {
+          border: none;
+        }
+        @media (max-width: 991px) {
+          border-bottom: 1px solid #660026;
+        }
+        a {
+          text-decoration: none;
+          outline: none;
+          display: block;
+          text-transform: uppercase;
+          @media (min-width: 992px) {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 42.4px);
+            display: flex;
+            color: #ffffff;
+            font-size: 1.125rem;
+            line-height: 21px;
+            padding: 21.2px 25px;
+          }
+          @media (max-width: 991px) {
+            color: #660026;
+            font-size: 1rem;
+            line-height: 16px;
+            padding: 14.5px 0;
+          }
+        }
+      }
     }
+    .selected-text {
+      display: none;
+      font-size: 1rem;
+      color: #fff;
+      line-height: 16px;
+      padding: 15px 79px 15px 36px;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        transform: rotate(-45deg) translateY(-50%);
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 42%;
+      }
+      @media (max-width: 991px) {
+        display: block;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .cmp-scrollnavigation{
-        &__list {
-            display: block;
-            li{
-                &:first-child {
-                background: #660026 0% 0% no-repeat padding-box;
-                    a{
-                         color: #fff;
-                         border: none;
-                         width: 90%;
-                    }
-                }
-                &:last-child a{
-                    border: none;
-                }
-            }
-        }
-        &__item {
-            background: #F9F9F9 0% 0% no-repeat padding-box;
-            text-align: left;
-            padding: 2% 7%;
-        }
-        &__link.nav-link {
-            text-align: left;
-            font: normal normal bold 16px/16px Mark Pro Bold;
-            letter-spacing: 0px;
-            color: #660026;
-            text-transform: uppercase;
-            width: 100%;
-            float: left;
-            border-bottom: 0.5px solid #660026;
-            padding: 8px 0;
-        }
-        &__link__arrow {
-           transform: rotate(90deg);
-            display: block;
-            float: right;
-            font: normal normal bold 30px/16px Mark Pro Bold;
-            position: relative;
-            top: 7px;
-            color: #fff;
-            right: 0;
-        }
-    }
-}
+
