@@ -20,21 +20,14 @@ $(function () {
   if ($(".cmp-inPagenavigation").length) {
     $(window).on("load resize", function () {
       if ($(window).width() <= 991) {
-        //Tablet and Mobile
-        var selectedTextDefault = $(".selected-text").text();
-        $(".cmp-inPagenavigation__lists a").each(function () {
-          if ($(this).text() == selectedTextDefault) {
-            $(this).parent().hide();
-          }
-        });
         //tablet and mobile SelectBox
         $(document).on("click", ".selected-text", function () {
           if ($(this).parent().hasClass("open")) {
             $(this).parent().removeClass("open");
             $(this).next().slideUp();
           } else {
-            $(".cmp-inPagenavigation nav").removeClass("open");
-            $(".cmp-inPagenavigation nav ul").slideUp();
+            $(".cmp-inPagenavigation .nav").removeClass("open");
+            $(".cmp-inPagenavigation .nav ul").slideUp();
             $(this).parent().addClass("open");
             $(this).next().slideDown();
           }
@@ -45,20 +38,18 @@ $(function () {
           var $hash = $(this.hash);
           $(".selected-text").text(selectedText);
           $(this).parents(".cmp-inPagenavigation__lists").slideUp();
-          $(this).parents("nav").removeClass("open");
+          $(this).parents(".nav").removeClass("open");
           if (
             this.pathname == window.location.pathname &&
             this.protocol == window.location.protocol &&
             this.host == window.location.host &&
             $(this).attr("href") != "#"
           ) {
-            $(this).parent().hide();
-            $(this).parent().siblings().removeAttr("style");
             $("body,html").animate(
               {
                 scrollTop: $hash.offset().top,
               },
-              3000
+              800
             );
             e.preventDefault();
           }
@@ -68,13 +59,12 @@ $(function () {
           var $trigger = $(".cmp-inPagenavigation");
           if ($trigger !== event.target && !$trigger.has(event.target).length) {
             $(".cmp-inPagenavigation__lists").slideUp();
-            $("nav").removeClass("open");
+            $(".nav").removeClass("open");
           }
         });
       } else {
         //Desktop
         $(".cmp-inPagenavigation__lists").removeAttr("style");
-        $(".cmp-inPagenavigation__lists li").removeAttr("style");
         $(document).on("click", ".cmp-inPagenavigation__lists a", function (e) {
           var selectedText = $(this).text();
           var $hash = $(this.hash);
@@ -89,7 +79,7 @@ $(function () {
               {
                 scrollTop: $hash.offset().top,
               },
-              3000
+              800
             );
             e.preventDefault();
           }
@@ -97,7 +87,4 @@ $(function () {
       }
     });
   }
-
 });
-
-
