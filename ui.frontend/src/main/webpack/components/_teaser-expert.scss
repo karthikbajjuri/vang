@@ -40,7 +40,7 @@
 	}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $cmp-vang-breakpoint-s) {
 	.cmp-teaser--expert {
 		.cmp-teaser {
 			&__content {
@@ -50,10 +50,16 @@
 	}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $cmp-vang-breakpoint-s) {
 	.cmp-vertical-center > .cmp-container > div {
 		display: flex;
 		overflow: hidden;
 		align-items: center;
+	}
+
+  .cmp-vertical-stretch > .cmp-container > div {
+		display: flex;
+		overflow: hidden;
+		align-items: stretch;
 	}
 }
