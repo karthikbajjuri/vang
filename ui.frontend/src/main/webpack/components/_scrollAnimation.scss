@@ -1,0 +1,14 @@
+.animate-fadeInUp {
+  @media (min-width: 768px) {
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, 25%);
+  }
+  &.js-active {
+    @media (min-width: 768px) {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
