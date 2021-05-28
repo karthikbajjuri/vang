@@ -67,14 +67,15 @@
         list-style-type: none;
         margin-bottom: 10px;
     }
-    &__links-item a{
+    &__links-item-link{
         font-family: Univers-Basic-Regular,Arial,sans-serif;
         font-size: 14px;
         color: $color-333;
         text-decoration: none;
     }
-    &__links-item a:hover{
+    &__links-item-link:hover{
         text-decoration: underline;
+        color: $color-333;
     }
     &__copyright-container-left{
         padding: 20px 0px;
