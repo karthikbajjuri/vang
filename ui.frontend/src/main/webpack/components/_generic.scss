@@ -9,7 +9,7 @@
 @media (min-width: 1025px) {
   .cmp-layout-container--fixed {
     max-width: $container-maxwidth;
-    float: unset!important;
+    float: unset!important; 
     margin: 0 auto!important;
     clear: both!important;
   }
