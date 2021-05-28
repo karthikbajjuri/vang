@@ -1,0 +1,44 @@
+.cmp-teaser--team-member,
+.cmp-teaser--team-member-single {
+	.cmp-teaser {
+		.cmp-image__image {
+			max-width: 100%;
+			height: auto;
+		}
+
+		&__content {
+			position: relative;
+			padding: 0 30px;
+		}
+
+		&__title {
+			font: normal normal 900 25px/30px Mark Pro;
+			width: 100%;
+			margin: .5rem 0;
+			color: #000000;
+		}
+
+		&__description * {
+			font: normal normal normal 17px/20px Mark Pro;
+			width: 100%;
+			color: #000000;
+		}
+
+		&__action-link {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.cmp-teaser--team-member {
+		.cmp-teaser {
+			max-width: 194px;
+			margin: 0 auto;
+
+			&__content {
+				padding: 0;
+			}
+		}
+	}
+}
