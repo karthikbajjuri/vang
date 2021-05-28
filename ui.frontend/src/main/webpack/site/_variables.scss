@@ -2,7 +2,7 @@
 //== Font
 
 $font-family:           "Mark Pro", Helvetica, Arial, sans-serif;
-$font-size:             16px;
+$font-size:             100%;
 $font-height:           1.5;
 
 //== Color
@@ -11,7 +11,6 @@ $font-height:           1.5;
 $color-foreground:      #202020;
 $color-background:      #ECECEC;
 $color-link:            #2020E0;
-
 $color-dim-grey: #6C6C6C;
 $color-snow: #F9F9F9;
 $color-matterhorn: #545454;
@@ -31,7 +30,6 @@ $color-c20029: #C20029;
 $color-000000:#000000;
 
 $container-maxwidth: 1065pt;
-
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);
