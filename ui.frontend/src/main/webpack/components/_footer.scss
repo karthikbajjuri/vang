@@ -4,7 +4,7 @@
     
    &__socialicons {
     background-color: $color-f2f2f2;
-    padding: 2% 15%;
+    padding: 2% 10%;
     }
    &__socialicons-list{
         list-style-type: none;
@@ -46,7 +46,7 @@
         background-position:-209px -2px;
     }
     &__container{
-        padding:2% 15%;
+        padding:2% 10%;
         background-color: $color-e5e5e5;
     }
     &__links{
@@ -67,14 +67,15 @@
         list-style-type: none;
         margin-bottom: 10px;
     }
-    &__links-item a{
+    &__links-item-link{
         font-family: Univers-Basic-Regular,Arial,sans-serif;
         font-size: 14px;
         color: $color-333;
         text-decoration: none;
     }
-    &__links-item a:hover{
+    &__links-item-link:hover{
         text-decoration: underline;
+        color: $color-333;
     }
     &__copyright-container-left{
         padding: 20px 0px;
@@ -181,7 +182,6 @@
     }
     }
     }
-
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
     .vg-footer{
