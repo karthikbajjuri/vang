@@ -35,6 +35,11 @@ $color-333: #333;
 
 $container-maxwidth: 1065pt;
 
+$cmp-vang-breakpoint-xs: 480px;
+$cmp-vang-breakpoint-s: 768px;
+$cmp-vang-breakpoint-m: 1024px;
+$cmp-vang-breakpoint-l: 1200px;
+
 // Dark mode
 $color-foreground-dark: invert($color-foreground);
 $color-background-dark: invert($color-background);

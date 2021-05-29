@@ -14,31 +14,45 @@
  *  limitations under the License.
  */
 
-@import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
+ @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
-/* maximum amount of grid cells to be provided */
-@max_col: 12;
+ /* maximum amount of grid cells to be provided */
+ @max_col: 12;
+ @cmp-vang-breakpoint-xs: 480px;
+ @cmp-vang-breakpoint-s: 768px;
+ @cmp-vang-breakpoint-m: 1024px;
+ @cmp-vang-breakpoint-l: 1200px;
 
-/* default breakpoint */
-.aem-Grid {
-  .generate-grid(default, @max_col);
-}
+ /* default breakpoint */
+ .aem-Grid {
+     .generate-grid(default, @max_col);
+ }
 
-/* phone breakpoint */
-@media (max-width: 768px) {
-  .aem-Grid {
-    .generate-grid(phone, @max_col);
-  }
-}
+ @media (max-width: @cmp-vang-breakpoint-xs) {
+     .aem-Grid {
+         .generate-grid(extrasmall, @max_col);
+     }
+ }
 
-/* tablet breakpoint */
-@media (min-width: 769px) and (max-width: 1200px) {
-  .aem-Grid {
-    .generate-grid(tablet, @max_col);
-  }
-}
+ @media (min-width: (@cmp-vang-breakpoint-xs + 1)) and (max-width: @cmp-vang-breakpoint-s) {
+     .aem-Grid {
+         .generate-grid(small, @max_col);
+     }
+ }
 
-/* force showing hidden components in unhide mode */
-.aem-GridShowHidden > .cmp-container > .aem-Grid > .aem-GridColumn {
-  display: block !important;
-}
+ @media (min-width: (@cmp-vang-breakpoint-s + 1) ) and (max-width: @cmp-vang-breakpoint-m) {
+     .aem-Grid {
+         .generate-grid(medium, @max_col);
+     }
+ }
+
+ @media (min-width: (@cmp-vang-breakpoint-m + 1)) and (max-width: @cmp-vang-breakpoint-l) {
+     .aem-Grid {
+         .generate-grid(large, @max_col);
+     }
+ }
+
+ /* force showing hidden components in unhide mode */
+ .aem-GridShowHidden > .cmp-container > .aem-Grid > .aem-GridColumn {
+   display: block !important;
+ }
