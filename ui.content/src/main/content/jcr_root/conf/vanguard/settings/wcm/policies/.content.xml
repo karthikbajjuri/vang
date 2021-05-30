@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
+                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
-                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -292,12 +292,9 @@
                 <policy_649128221558427
                     cq:styleDefaultElement="main"
                     jcr:description="Sets a &lt;main> element on the page content area."
-                    jcr:lastModified="{Date}2021-05-29T18:24:08.650+10:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    layoutDisabled="false">
+                    sling:resourceType="wcm/core/components/policy/policy">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
@@ -331,13 +328,10 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_4234250003919757
-                    jcr:lastModified="{Date}2021-05-29T22:02:44.827+10:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Container"
-                    sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:Vanguard - Content,/apps/vanguard/components/form/container]"
-                    layoutDisabled="false">
+                    sling:resourceType="wcm/core/components/policy/policy">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -377,24 +371,36 @@
                                     cq:styleLabel="grey"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item2
-                                    cq:styleClasses="cmp-background__snow"
                                     cq:styleId="1621940496124"
-                                    cq:styleLabel="snow"
+                                    cq:styleLabel="default"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item2
+                            cq:styleGroupLabel="Alignment"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-vertical-center"
+                                    cq:styleId="1621932756079"
+                                    cq:styleLabel="Vertical Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-vertical-stretch"
+                                    cq:styleId="1621939787280"
+                                    cq:styleLabel="Vertical Equalize"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
                     </cq:styleGroups>
                 </policy_4234250003919757>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
                     jcr:description="Sets the title size to H3."
-                    jcr:lastModified="{Date}2021-05-29T18:20:10.856+10:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    showTitleType="false"
                     titleType="h3">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
@@ -418,9 +424,14 @@
                                     cq:styleLabel="Press Inquiries"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item3
-                                    cq:styleClasses="vg-banner--component"
-                                    cq:styleId="1622276403122"
-                                    cq:styleLabel="Hero Banner"
+                                    cq:styleClasses="cmp-teaser--expert"
+                                    cq:styleId="1547060090065"
+                                    cq:styleLabel="Meet The Expert"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-teaser--team-member-single"
+                                    cq:styleId="1550165685466"
+                                    cq:styleLabel="Expert Single"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
