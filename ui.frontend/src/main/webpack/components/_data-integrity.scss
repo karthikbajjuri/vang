@@ -137,3 +137,12 @@
     }
   }
 }
+
+@media (min-width: 1025px) {
+  .vg-blockquote {
+    max-width: $container-maxwidth;
+    float: unset !important;
+    margin: 0 auto !important;
+    clear: both !important;
+  }
+}

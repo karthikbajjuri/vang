@@ -1,9 +1,15 @@
-.cmp-background__red {
-  background: $color-c20029 0% 0% no-repeat padding-box;
-}
+.cmp-background {
+  &__red {
+    background: $color-c20029 0% 0% no-repeat padding-box;
+  }
 
-.cmp-background__grey {
-  background: $color-ffeded 0 0 no-repeat padding-box;
+  &__grey {
+    background: $color-ffeded 0 0 no-repeat padding-box;
+  }
+
+  &__snow {
+    background: $color-snow 0 0 no-repeat padding-box;
+  }
 }
 
 @media (min-width: 1025px) {
