@@ -376,6 +376,22 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item2
+                            cq:styleGroupLabel="Alignment"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-vertical-center"
+                                    cq:styleId="1621932756079"
+                                    cq:styleLabel="Vertical Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-vertical-stretch"
+                                    cq:styleId="1621939787280"
+                                    cq:styleLabel="Vertical Equalize"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
                     </cq:styleGroups>
                 </policy_4234250003919757>
             </container>
@@ -406,6 +422,16 @@
                                     cq:styleClasses="vg-pressinquiries--component"
                                     cq:styleId="1550165685464"
                                     cq:styleLabel="Press Inquiries"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="cmp-teaser--expert"
+                                    cq:styleId="1547060090065"
+                                    cq:styleLabel="Meet The Expert"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-teaser--team-member-single"
+                                    cq:styleId="1550165685466"
+                                    cq:styleLabel="Expert Single"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
