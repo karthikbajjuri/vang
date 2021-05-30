@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/vanguard"/>
-    <filter root="/content/vanguard"/>
+    <filter root="/conf/vanguard" mode="merge"/>
+    <filter root="/content/vanguard" mode="merge"/>
     <filter root="/content/dam/vanguard/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/vanguard" mode="merge"/>
 </workspaceFilter>
