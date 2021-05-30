@@ -1,18 +1,22 @@
-.vg_data_enables{
-    background-color: #fff;
-    padding-bottom: 100px;
-   &_leftcol{
-		&_image{
-        padding:215px 7% 0;
-        width: 100%;
-        height: 623px;
+.vg_data_enables {
+	background-color: #fff;
+	padding-bottom: 100px;
+
+
+	&_leftcol {
+		&_image {
+			padding: 215px 7% 0;
+			width: 100%;
+			height: 623px;
 		}
+
 		&_action-container {
 			width: 100%;
 			text-align: center;
 			margin: 0 auto;
 		}
-		&_action-link{
+
+		&_action-link {
 			background-color: #000;
 			border-radius: 100px;
 			padding: 14px 24px;
@@ -20,81 +24,105 @@
 			letter-spacing: 1px;
 			display: inline-block;
 			margin-top: 30px;
-			font-size: 18px;
-			font-weight: normal;
-			line-height: 16px;
 			border-color: #fff;
 			color: #fff;
 			text-transform: initial;
 			text-decoration: none;
+      font: normal normal bold 18px/16px Mark Pro;
 		}
+
 		&_action-link:hover {
 			text-decoration: underline;
 		}
-    }
-    &_rightcol{
-        padding-left: 72px;
-        &_title{
-            padding-top:106px;
-            text-align: left;
+	}
+
+	&_rightcol {
+		padding-left: 72px;
+
+		&_title {
+			padding-top: 106px;
+		}
+
+    &_title ,
+    &_title2 {
+
+			text-align: left;
 			font: normal normal 900 60px/70px Mark Pro Heavy;
 			letter-spacing: 0px;
 			color: #000000;
-        }
-        &_description{
-        	font: normal normal normal 25px/30px Mark Pro;
+		}
+
+		&_description {
+			font: normal normal normal 25px/30px Mark Pro;
 			margin: 30px 0 50px 0;
-        }
-        &_list_item {
-            &_title{
-            text-align: left;
-        	font: normal normal bold 25px/30px Mark Pro Bold;
-			margin: 0;
-            }
-            &_col ul{
-            	padding-left: 0rem;
-            	li{
-                    list-style-type: none;
-                    margin: 10px 0;
-                    .arrow{
-                        color:#C20029;
-                    }
-                }
-                a{
-                    color:#000000;
-                    text-decoration: none;
-                    text-align: left;
-                	font: normal normal normal 25px/40px Mark Pro;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-	.vg_data_enables{
-	        &_leftcol_image{
-                padding: 0;
-	        }
-			&_rightcol {
-			padding: 0px 11%;
+		}
+
+		&_list_item {
 			&_title {
+				text-align: left;
+				font: normal normal bold 25px/30px Mark Pro Bold;
+				margin: 0;
+			}
+
+			&_col ul {
+				padding-left: 0rem;
+
+				li {
+					list-style-type: none;
+					margin: 10px 0;
+
+					.arrow {
+						color: #C20029;
+					}
+				}
+
+				a {
+					color: #000000;
+					text-decoration: none;
+					text-align: left;
+					font: normal normal normal 25px/40px Mark Pro;
+				}
+			}
+		}
+
+    &_list_item_col {
+      padding: 0 1rem 0 0;
+    }
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.vg_data_enables {
+		&_leftcol_image {
+			padding: 0;
+		}
+
+		&_rightcol {
+			padding: 0px 11%;
+
+			&_title,
+      &_title2  {
 				text-align: left;
 				font: normal normal 900 40px/45px Mark Pro Heavy;
 				letter-spacing: 0px;
 				color: #000000;
 			}
+
+
 			&_description {
 				text-align: left;
 				font: normal normal normal 18px/24px Mark Pro;
 				letter-spacing: 0px;
 				color: #000000;
 			}
+
 			&_list_item_title {
 				text-align: left;
 				font: normal normal bold 20px/25px Mark Pro;
 				letter-spacing: 0px;
 				color: #000000;
 			}
+
 			&_list_item_col ul a {
 				text-align: left;
 				font: normal normal normal 20px/22px Mark Pro;

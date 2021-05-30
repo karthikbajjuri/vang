@@ -4,7 +4,7 @@
     padding-bottom: 55px;
     text-align: center;
     padding-top: 80px;
-    font: normal normal 900 60px/60px Mark Pro;
+    font: normal normal 900 60px/60px Mark Pro Heavy;
   }
 
   .vg-rightchart {
@@ -24,6 +24,7 @@
       font-family: Mark Pro Heavy;
       line-height: 70px;
       font-size: 60px;
+      margin-bottom: 45px;
     }
 
     &__left__about {
@@ -32,26 +33,26 @@
       font-size: 15px;
       color: $color-c20029;
       padding-top: 10px;
+      text-transform: uppercase;
     }
 
     &__left__description {
-      font-family: Mark Pro Regular;
-      line-height: 30px;
+      font-family: Mark Pro;
+      line-height: 35px;
       font-size: 25px;
-      padding: 20px 0px;
+      margin-bottom: 60px;
     }
 
     &__left__link {
+      border: unset;
       background-color: $color-000000;
       text-align: center;
-      line-height: 16px;
-      font-size: 18px;
-      font: Mark Pro Bold;
       color: $color-ffffff;
       height: 35px;
       border-radius: 100px;
       padding: 5px 50px;
       text-decoration: none;
+      font: normal normal bold 18px/16px Mark Pro;
     }
 
     &__right__image {
@@ -86,7 +87,6 @@
     .vg-rightchart {
       &__left__link {
         width: 100%;
-        margin: 20px 0px;
       }
 
       &__left {
@@ -101,6 +101,7 @@
       &__left__title {
         font-size: 40px;
         line-height: 45px;
+        margin-bottom: 30px;
       }
 
       &__left__description {
@@ -128,7 +129,7 @@
 
       &__left__content {
         border: none;
-        margin-top: 0px;
+        margin-bottom: 48.5px;
       }
     }
 
