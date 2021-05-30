@@ -10,10 +10,10 @@
 		}
 
 		&__title {
-			font: normal normal 900 60px/70px Mark Pro Heavy;
+			font: normal normal 900 40px/45px Mark Pro;
 			color: #000000;
 			width: 100%;
-			margin-bottom: 30px;
+			margin-bottom: 17px;
 		}
 
 		&__title-link {
@@ -21,19 +21,24 @@
 		}
 
 		&__description {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 		}
 
 		&__description p {
 			width: 100%;
 			margin-bottom: 40px;
 			color: #000000;
+			font: normal normal normal 18px/24px Mark Pro;
+
+			i {
+				font-style: italic;
+			}
 		}
 
 		&__action-link {
 			margin-top: 0;
 			text-align: center;
-			font: normal normal bold 18px/23px Mark Pro Bold;
+			font: normal normal bold 18px/16px Mark Pro;
 			letter-spacing: 0px;
 			color: #ffffff;
 		}
@@ -43,23 +48,56 @@
 @media screen and (min-width: $cmp-vang-breakpoint-s) {
 	.cmp-teaser--expert {
 		.cmp-teaser {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
 			&__content {
 				padding: 6.25rem 2rem;
+			}
+
+			&__title {
+				font: normal normal 900 60px/70px Mark Pro;
+				margin-bottom: 30px;
+			}
+
+			&__description {
+				margin-bottom: 60px;
+			}
+
+			&__description p {
+				margin-bottom: 40px;
+				font: normal normal normal 25px/35px Mark Pro;
+			}
+
+			&__action-link {
+				font: normal normal bold 18px/16px Mark Pro;
 			}
 		}
 	}
 }
 
-@media screen and (min-width: $cmp-vang-breakpoint-s) {
-	.cmp-vertical-center > .cmp-container > div {
-		display: flex;
-		overflow: hidden;
-		align-items: center;
-	}
+.cmp-container-expert {
+  background-color: #ffffff;
+}
 
-  .cmp-vertical-stretch > .cmp-container > div {
-		display: flex;
-		overflow: hidden;
-		align-items: stretch;
+@media screen and (min-width: $cmp-vang-breakpoint-s) {
+	.cmp-container-expert {
+		>.cmp-container>div {
+			display: flex;
+			overflow: hidden;
+			align-items: stretch;
+		}
+	}
+}
+
+@media (min-width: $cmp-vang-breakpoint-m) {
+	.cmp-container-expert {
+		>.cmp-container {
+			max-width: $container-maxwidth;
+			float: unset !important;
+			margin: 0 auto !important;
+			clear: both !important;
+		}
 	}
 }

@@ -10,9 +10,17 @@
   &__snow {
     background: $color-snow 0 0 no-repeat padding-box;
   }
+
+  &__nav-red {
+    background: $color-nav-red 0 0 no-repeat padding-box;
+  }
+
+  &__white {
+    background: $color-ffffff 0 0 no-repeat padding-box;
+  }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $cmp-vang-breakpoint-m) {
   .cmp-layout-container--fixed {
     max-width: $container-maxwidth;
     float: unset !important;

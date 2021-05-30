@@ -24,7 +24,7 @@
   }
 
   &__subtitle {
-    font: normal normal normal 25px/35px Mark Pro;
+    font: normal normal normal 25px/35px Mark Pro ;
     letter-spacing: 0px;
     color: #000000;
   }
@@ -126,6 +126,10 @@
       p {
         margin-bottom: 15px;
       }
+
+      i {
+        font-style: italic;
+      }
     }
 
     &__right-doublequote:after {
@@ -138,7 +142,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $cmp-vang-breakpoint-m) {
   .vg-blockquote {
     max-width: $container-maxwidth;
     float: unset !important;
