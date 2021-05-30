@@ -1,140 +1,139 @@
 .vg-blockquote {
-	position: relative;
+  position: relative;
 
-	&__v-image {
-		position: absolute;
-		left: 50%;
-		margin-top: -50px;
-	}
+  &__v-image {
+    position: absolute;
+    left: 50%;
+    margin-top: -50px;
+  }
 
-	&__content {
-		color: #000;
-		padding: 7%;
-		display: block;
-		float: left;
-	}
+  &__content {
+    color: #000;
+    padding: 7%;
+    display: block;
+    float: left;
+  }
 
-	&__title {
-		width: 50%;
-	}
+  &__title {
+    width: 50%;
+  }
 
-	&__main-title {
-		margin: 0;
-		font: normal normal 900 60px/72px Mark Pro Heavy;
-	}
+  &__main-title {
+    margin: 0;
+    font: normal normal 900 60px/72px Mark Pro Heavy;
+  }
 
-	&__subtitle {
-		font: normal normal normal 25px/35px Mark Pro;
-		letter-spacing: 0px;
-		color: #000000;
-	}
+  &__subtitle {
+    font: normal normal normal 25px/35px Mark Pro;
+    letter-spacing: 0px;
+    color: #000000;
+  }
 
-	&__quote-text {
-		text-align: left;
-		font: normal normal 900 74px/89px Mark Pro Heavy;
-		letter-spacing: 0px;
-		color: #000000;
-		margin: 20px 0 30px 0;
-	}
+  &__quote-text {
+    text-align: left;
+    font: normal normal 900 74px/89px Mark Pro Heavy;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 20px 0 30px 0;
+  }
 
-	&__description {
-		float: left;
-		width: 50%;
-		text-align: left;
-		font: normal normal normal 25px/35px Mark Pro;
-		letter-spacing: 0px;
-		color: #000000;
-	}
+  &__description {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font: normal normal normal 25px/35px Mark Pro;
+    letter-spacing: 0px;
+    color: #000000;
+  }
 
-	&__content__white {
-		color: #FFFFFF;
-		position: relative;
-	}
+  &__content__white {
+    color: #ffffff;
+    position: relative;
+  }
 
-	&__v-image-leftdoublequote {
-		padding-top: 25%;
-		position: absolute;
-		width: 172px;
-	}
+  &__v-image-leftdoublequote {
+    padding-top: 25%;
+    position: absolute;
+    width: 172px;
+  }
 
-	&__v-image-rightdoublequote {
-		position: absolute;
-		right: 7%;
-		top: 39%;
-		width: 172px;
-	}
+  &__v-image-rightdoublequote {
+    position: absolute;
+    right: 7%;
+    top: 39%;
+    width: 172px;
+  }
 
-	&__right-doublequote:after {
-		content: url('/content/dam/vanguard/right-doublequotes.png');
-		position: absolute;
-	}
+  &__right-doublequote:after {
+    content: url('/content/dam/vanguard/right-doublequotes.png');
+    position: absolute;
+  }
 
-	&__left-doublequote:before {
-		left: -9%;
-		content: url('/content/dam/vanguard/left-doublequotes.png');
-		position: absolute;
-		margin-top: 34%;
-	}
+  &__left-doublequote:before {
+    left: -9%;
+    content: url('/content/dam/vanguard/left-doublequotes.png');
+    position: absolute;
+    margin-top: 34%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.vg-blockquote {
-		&__v-image {
-			left: 12%;
-			width: 80%;
-			height: 50%;
-		}
+  .vg-blockquote {
+    &__v-image {
+      left: 12%;
+      width: 80%;
+      height: 50%;
+    }
 
-		&__content {
-			padding: 60px 6%;
-		}
+    &__content {
+      padding: 60px 6%;
+    }
 
-		&__title {
-			width: 100%;
-		}
+    &__title {
+      width: 100%;
+    }
 
-		&__subtitle {
-			width: 100%;
-			text-align: left;
-			font: normal normal normal 18px/24px Mark Pro;
-			letter-spacing: 0px;
-		}
+    &__subtitle {
+      width: 100%;
+      text-align: left;
+      font: normal normal normal 18px/24px Mark Pro;
+      letter-spacing: 0px;
+    }
 
-		&__main-title {
-			width: 100%;
-			text-align: left;
-			font: normal normal 900 40px/45px Mark Pro Heavy;
-			letter-spacing: -0.6px;
-			margin-bottom: 20px;
-		}
+    &__main-title {
+      width: 100%;
+      text-align: left;
+      font: normal normal 900 40px/45px Mark Pro Heavy;
+      letter-spacing: -0.6px;
+      margin-bottom: 20px;
+    }
 
-		&__quote-text {
-			width: 100%;
-			text-align: left;
-			font: normal normal 900 45px/50px Mark Pro Heavy;
-			letter-spacing: 0px;
-			margin: 30px 0;
-		}
+    &__quote-text {
+      width: 100%;
+      text-align: left;
+      font: normal normal 900 45px/50px Mark Pro Heavy;
+      letter-spacing: 0px;
+      margin: 30px 0;
+    }
 
-		&__description {
-			float: left;
-			width: 100%;
-			text-align: left;
-			font: normal normal normal 18px/24px Mark Pro;
-			letter-spacing: 0px;
+    &__description {
+      float: left;
+      width: 100%;
+      text-align: left;
+      font: normal normal normal 18px/24px Mark Pro;
+      letter-spacing: 0px;
 
-			p {
-				margin-bottom: 15px;
-			}
-		}
+      p {
+        margin-bottom: 15px;
+      }
+    }
 
-		&__right-doublequote:after {
-			display: none;
-		}
+    &__right-doublequote:after {
+      display: none;
+    }
 
-		&__left-doublequote:before {
-			display: none;
-		}
-	}
-
+    &__left-doublequote:before {
+      display: none;
+    }
+  }
 }

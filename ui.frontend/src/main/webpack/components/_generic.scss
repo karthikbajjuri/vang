@@ -1,16 +1,16 @@
 .cmp-background__red {
-	background: $color-c20029 0% 0% no-repeat padding-box;
+  background: $color-c20029 0% 0% no-repeat padding-box;
 }
 
 .cmp-background__grey {
-	background: $color-ffeded 0 0 no-repeat padding-box;
+  background: $color-ffeded 0 0 no-repeat padding-box;
 }
 
 @media (min-width: 1025px) {
-	.cmp-layout-container--fixed {
-		max-width: $container-maxwidth;
-		float: unset !important;
-		margin: 0 auto !important;
-		clear: both !important;
-	}
+  .cmp-layout-container--fixed {
+    max-width: $container-maxwidth;
+    float: unset !important;
+    margin: 0 auto !important;
+    clear: both !important;
+  }
 }
