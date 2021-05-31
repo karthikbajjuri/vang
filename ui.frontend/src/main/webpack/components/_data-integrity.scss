@@ -31,13 +31,13 @@
         color: #000000;
         margin: 20px 0 30px 0;
     }
-      
+
     &__quote-text-width {
     font: normal normal normal 74px/78px Thorndale AMT;
     width: 90vw;
     margin: 20px 0 30px 0;
     }
-    
+
     &__description{
         float: left;
         width: 55%;
@@ -65,16 +65,7 @@
         top: 39%;
         width: 172px;
     }
-    &__right-doublequote:after {
-        content: url('/content/dam/vanguard/right-doublequotes.png');
-        position:absolute;
-     }
-     &__left-doublequote:before {
-        left: -9%;
-        content: url('/content/dam/vanguard/left-doublequotes.png');
-        position: absolute;
-        margin-top: 34%;
-     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -123,12 +114,14 @@
                 margin-bottom: 15px;
             }
         }
-        &__right-doublequote:after {
-            display: none;
-         }
-         &__left-doublequote:before {
-            display: none;
-         }
+
     }
 
+@media (min-width: $cmp-vang-breakpoint-m) {
+  .vg-blockquote {
+    max-width: $container-maxwidth;
+    float: unset !important;
+    margin: 0 auto !important;
+    clear: both !important;
+  }
 }

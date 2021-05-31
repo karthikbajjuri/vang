@@ -4,6 +4,7 @@
   width: 100%;
   overflow: hidden;
   color: #fff;
+
   &__content {
     position: absolute;
     top: 0;
@@ -12,9 +13,9 @@
     min-height: auto;
     min-width: auto;
   }
+
   &__title {
     width: 462px;
-    color: #000;
     text-align: left;
     letter-spacing: 0px;
     opacity: 1;
@@ -22,37 +23,43 @@
     margin: 0;
     font-size: 72px;
     line-height: 74px;
-    font-family: "Mark Pro Heavy";
+    font-family: 'Mark Pro Heavy';
   }
+
   &__title-link {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
     pointer-events: none;
+
     &:hover {
       color: #fff;
     }
   }
+
   &__content {
     bottom: auto;
     padding: 76px 90px;
     background: none;
   }
+
   &__description {
     h3 {
       margin-bottom: 10px;
-      font-size: 27px;
       font-weight: bold;
       width: 490px;
       text-align: left;
       margin-top: 8px;
+      font: normal normal bold 27px/74px Mark Pro;
     }
+
     p {
       margin-bottom: 20px;
       font: normal normal normal 18px/24px Mark Pro;
       width: 488px;
     }
   }
+
   &__action-link {
     background-color: #000;
     border-radius: 100px;
@@ -68,10 +75,8 @@
     color: #fff;
     text-transform: initial;
     text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
+
   &__action-link {
     background-color: #000;
     border-radius: 100px;
@@ -80,17 +85,14 @@
     letter-spacing: 1px;
     display: inline-block;
     margin-top: 30px;
-    font-size: 18px;
     font-weight: normal;
-    line-height: 16px;
     border-color: #fff;
     color: #fff;
     text-transform: initial;
     text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
+    font: normal normal bold 18px/16px Mark Pro;
   }
+
   .cmp-image__image {
     width: 100%;
     display: block;
@@ -105,15 +107,18 @@
     text-align: center;
     margin: 0 auto;
   }
+
   .cmp-teaser {
     background: #fff;
     width: 100%;
+
     &__image {
       float: left;
       width: 50%;
       display: block;
       clear: both;
     }
+
     &__content {
       position: relative;
       top: 0;
@@ -127,6 +132,7 @@
       padding: 174px 0px 225px 0;
       background: none;
     }
+
     &__title {
       width: 533px;
       text-align: left;
@@ -135,16 +141,19 @@
       margin: 0;
       font-size: 60px;
       line-height: 74px;
-      font-family: "Mark Pro Heavy";
+      font-family: 'Mark Pro Heavy';
       letter-spacing: 0px;
       color: #232323;
     }
+
     &__title-link {
       color: #000;
+
       &:hover {
         color: #000;
       }
     }
+
     &__description p {
       margin: 34px 0;
       width: auto;
@@ -155,6 +164,7 @@
     }
   }
 }
+
 /**** Expert END *********/
 
 /**** Banner Start *********/
@@ -165,6 +175,7 @@
       width: 50%;
       padding: 7% 0;
     }
+
     &__title {
       text-align: left;
       font: normal normal 900 60px/50px Mark Pro Heavy;
@@ -173,14 +184,17 @@
       opacity: 1;
       width: 100%;
     }
+
     &__description {
-        padding-right: 70px;
+      padding-right: 70px;
     }
+
     &__description p {
       width: 100%;
       padding: 20px 0 50px 0;
       margin-bottom: 0;
     }
+
     &__action-link {
       margin-top: 0;
       text-align: center;
@@ -188,11 +202,13 @@
       letter-spacing: 0px;
       color: #ffffff;
     }
+
     .cmp-image__image {
       height: 623px;
     }
   }
 }
+
 /**** Banner End *********/
 @media screen and (max-width: 768px) {
   .cmp-teaser {
@@ -200,9 +216,11 @@
       padding: 7%;
       width: 100%;
     }
+
     .cmp-image__image {
       height: 523px;
     }
+
     &__title {
       width: 257px;
       text-align: left;
@@ -212,6 +230,7 @@
       opacity: 1;
       margin-right: 0;
     }
+
     &__description {
       h3 {
         width: 231px;
@@ -222,6 +241,7 @@
         opacity: 1;
         margin: 20px 0 10px 0;
       }
+
       p {
         width: 280px;
         text-align: left;
@@ -230,6 +250,7 @@
         color: #ffffff;
       }
     }
+
     &__action-link {
       max-width: 280px;
       text-align: center;
@@ -238,10 +259,11 @@
       width: 100%;
       padding: 14px 0;
     }
+
     &__action-container {
-        width: 100%;
-        margin: 0 auto;
-      }
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   /*** Expert Start ****/
@@ -250,14 +272,18 @@
       height: 350px;
       width: 100%;
     }
+
     .cmp-teaser {
       margin-bottom: 60px;
+
       &__image {
         width: 100%;
       }
+
       &__title {
         color: #232323;
       }
+
       &__content {
         width: 100%;
         padding: 35px 35px 0 35px;
@@ -269,6 +295,7 @@
       }
     }
   }
+
   /*** Expert END ****/
   .vg-banner--component {
     .cmp-teaser {
@@ -278,9 +305,11 @@
         background: #ffeded 0% 0% no-repeat padding-box;
         width: 100%;
       }
+
       &__description {
-           padding: 0 7%;
-       }
+        padding: 0 7%;
+      }
+
       &__description p {
         width: 100%;
         text-align: left;
@@ -289,14 +318,16 @@
         color: #000000;
         padding: 38px 0;
       }
+
       &__title-link {
         color: #000;
         text-align: left;
         font: normal normal 900 40px/45px Mark Pro Heavy;
         letter-spacing: 0px;
         display: block;
-             padding: 0 7%;
+        padding: 0 7%;
       }
+
       &__action-link {
         margin-top: 0;
         text-align: center;
@@ -306,19 +337,24 @@
         margin-bottom: 50px;
         margin: 0 7%;
       }
+
       .cmp-image__image {
         height: 284px;
       }
     }
   }
 }
+
 @media screen and (max-width: 900px) {
   .cmp-teaser__content {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 330px) {
   .cmp-teaser .cmp-teaser__action-link {
     max-width: 250px;
   }
 }
+
+

@@ -32,8 +32,15 @@ $color-96151d: #96151d;
 $color-f2f2f2:#f2f2f2;
 $color-e5e5e5:#e5e5e5;
 $color-333: #333;
+$color-nav-red: #660026;
 
-$container-maxwidth: 1065pt;
+$container-maxwidth: 1600px;
+
+
+$cmp-vang-breakpoint-xs: 480px;
+$cmp-vang-breakpoint-s: 769px;
+$cmp-vang-breakpoint-m: 1025px;
+$cmp-vang-breakpoint-l: 1200px;
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);

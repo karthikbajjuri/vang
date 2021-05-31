@@ -3,36 +3,37 @@
 
 html,
 body {
-    margin: 0;
-    overflow-x: hidden !important;
-    font-size:   $font-size;
-    font-family: $font-family;
-    line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
-    .element {
-        vertical-align:baseline;
-        *vertical-align:middle;
-        *overflow:visible;
-        margin:0;
-        // font-family:inherit;
-        // font-size:inherit;
-        // line-height:inherit;
-    }
+  margin: 0;
+  overflow-x: hidden !important;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $font-height;
+  color: $color-foreground;
+  background: $color-background;
 
-    @media (prefers-color-scheme: dark) {
-        color:       $color-foreground-dark;
-        background:  $color-background-dark;
-    }
+  .element {
+    vertical-align: baseline;
+    *vertical-align: middle;
+    *overflow: visible;
+    margin: 0;
+    // font-family:inherit;
+    // font-size:inherit;
+    // line-height:inherit;
+  }
+
+  // @media (prefers-color-scheme: dark) {
+  //   color: $color-foreground-dark;
+  //   background: $color-background-dark;
+  // }
 }
 
-
 a {
-    color: $color-link;
+  color: $color-link;
+  text-decoration: none;
 
-    @media (prefers-color-scheme: dark) {
-        color: $color-link-dark;
-    }
+  // @media (prefers-color-scheme: dark) {
+  //   color: $color-link-dark;
+  // }
 }
 
 button,
@@ -40,5 +41,5 @@ input,
 optgroup,
 select,
 textarea {
-    font: inherit;
+  font: inherit;
 }
