@@ -63,18 +63,6 @@
     top: 39%;
     width: 172px;
   }
-
-  &__right-doublequote:after {
-    content: url('/content/dam/vanguard/right-doublequotes.png');
-    position: absolute;
-  }
-
-  &__left-doublequote:before {
-    left: -9%;
-    content: url('/content/dam/vanguard/left-doublequotes.png');
-    position: absolute;
-    margin-top: 34%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -130,14 +118,6 @@
       i {
         font-style: italic;
       }
-    }
-
-    &__right-doublequote:after {
-      display: none;
-    }
-
-    &__left-doublequote:before {
-      display: none;
     }
   }
 }

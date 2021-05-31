@@ -381,14 +381,9 @@
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="cmp-vertical-center"
+                                    cq:styleClasses="cmp-container-expert"
                                     cq:styleId="1621932756079"
-                                    cq:styleLabel="Vertical Center"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-vertical-stretch"
-                                    cq:styleId="1621939787280"
-                                    cq:styleLabel="Vertical Equalize"
+                                    cq:styleLabel="Expert Container"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item2>
@@ -408,18 +403,13 @@
                             cq:styleGroupLabel="Variant"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="vg-expert--component"
-                                    cq:styleId="1547060090076"
-                                    cq:styleLabel="Meet Expert"
-                                    jcr:primaryType="nt:unstructured"/>
                                 <item1
-                                    cq:styleClasses="vg-banner--component"
+                                    cq:styleClasses="vg-pressinquiries--component cmp-background__grey"
                                     cq:styleId="1550165685463"
                                     cq:styleLabel="Insights Banner"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item2
-                                    cq:styleClasses="vg-pressinquiries--component"
+                                    cq:styleClasses="vg-pressinquiries--component cmp-background__snow"
                                     cq:styleId="1550165685464"
                                     cq:styleLabel="Press Inquiries"
                                     jcr:primaryType="nt:unstructured"/>
