@@ -4,7 +4,7 @@
 	&__v-image {
     position: absolute;
     left: 50%;
-    margin-top: -35px;
+    margin-top: -40px;
     }
 	&__content {
 		color: #000;
@@ -136,9 +136,7 @@
 @media screen and (min-width: 769px) and (max-width:1024px){
     .vg-blockquote{
         &__v-image {
-
-            left: 40%;
-
+        left: 40%;
         }
     }
 }
