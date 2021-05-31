@@ -7,3 +7,14 @@
     }
   }
 }
+@media screen and (max-width: 768px){
+.cmp-teaser--hero-banner {
+  .cmp-teaser {
+    .cmp-image__hero-banner-image  {
+    height: auto;
+    width: 220vw;
+    transform: translate(-35%, 0%);
+    }
+  }
+}
+}
