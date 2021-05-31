@@ -18,11 +18,21 @@
 }
 
 .grid-comp p {
-	font-size: 25px;
-	font: normal normal bold 25px/44px Mark Pro Bold;
+	font: normal normal normal 25px/44px Mark Pro;
 	text-align: center;
 	display: block;
-	line-height: 30px;
+}
+
+// 20 years
+.gridComponentTextLeft p:nth-child(2) {
+	font: normal normal 900 92px/116px 'MARK PRO HEAVY';
+
+	.number {
+		width: auto;
+		padding: 0;
+		float: none;
+		font: inherit;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -34,9 +44,12 @@
 		font-size: 20px;
 	}
 
+  .gridComponentTextLeft p:nth-child(2) {
+    font: normal normal 900 55px/70px 'MARK PRO HEAVY';
+  }
+
 	.gridComponentTextLeft,
 	.gridComponentTextRight {
 		width: 100%;
 	}
-
 }

@@ -10,7 +10,7 @@
 		}
 
 		&__title {
-			font: normal normal 900 40px/45px Mark Pro;
+			font: normal normal 900 40px/45px 'Mark Pro Heavy';
 			color: #000000;
 			width: 100%;
 			margin-bottom: 17px;
@@ -38,7 +38,7 @@
 		&__action-link {
 			margin-top: 0;
 			text-align: center;
-			font: normal normal bold 18px/16px Mark Pro;
+			font: normal normal bold 18px/16px 'Mark Pro Bold';
 			letter-spacing: 0px;
 			color: #ffffff;
 		}
@@ -71,12 +71,13 @@
 			}
 
 			&__action-link {
-				font: normal normal bold 18px/16px Mark Pro;
+				font: normal normal bold 18px/16px 'Mark Pro Bold';
 			}
 		}
 	}
 }
 
+// container styles.
 .cmp-container-expert {
   background-color: #ffffff;
 }
