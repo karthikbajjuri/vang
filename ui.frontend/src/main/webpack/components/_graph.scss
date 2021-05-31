@@ -3,7 +3,7 @@
   position: relative;
   .growth_info {
     position: absolute;
-    right: 20px;
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 21px;
@@ -54,5 +54,10 @@
   font-size: 24px;
   line-height: 28px;
   color: #000;
-  max-width: 55%;
+  max-width: 50%;
+  margin-left: 5%;
+}
+.graph-container {
+    background-color: $color-ffffff;
+    padding: 10% 0 10% 0px;
 }
