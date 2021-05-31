@@ -31,13 +31,24 @@
         color: #000000;
         margin: 20px 0 30px 0;
     }
+      
+    &__quote-text-width {
+    font: normal normal normal 74px/78px Thorndale AMT;
+    width: 90vw;
+    margin: 20px 0 30px 0;
+    }
+    
     &__description{
         float: left;
-        width: 50%;
+        width: 55%;
     	text-align: left;
         font: normal normal normal 25px/35px Mark Pro;
         letter-spacing: 0px;
         color: #000000;
+
+        i{
+          font-style:italic;
+        }
     }
     &__content__white{
         color:#FFFFFF;
@@ -80,20 +91,23 @@
             width: 100%;
         }
         &__subtitle{
-            width: 100%;
+            width: 91%;
             text-align: left;
             font: normal normal normal 18px/24px Mark Pro;
             letter-spacing: 0px;
         }
         &__main-title{
-            width: 100%;
+            width: 98%;
             text-align: left;
             font: normal normal 900 40px/45px Mark Pro Heavy;
             letter-spacing: -0.6px;
             margin-bottom: 20px;
         }
+        &__quote-text-width{
+            width:65vw;
+        }
         &__quote-text{
-            width: 100%;
+            width: 92%;
             text-align: left;
             font: normal normal 900 45px/50px Mark Pro Heavy;
             letter-spacing: 0px;
@@ -101,7 +115,7 @@
         }
         &__description {
             float: left;
-            width: 100%;
+            width: 92%;
         	text-align: left;
             font: normal normal normal 18px/24px Mark Pro;
             letter-spacing: 0px;
