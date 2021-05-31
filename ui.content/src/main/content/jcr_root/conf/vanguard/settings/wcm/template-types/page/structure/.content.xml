@@ -18,21 +18,13 @@
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
-                <extrasmall
-                    jcr:primaryType="nt:unstructured"
-                    title="Extra Smaller Screen"
-                    width="{Long}480"/>
-                <small
+                <phone
                     jcr:primaryType="nt:unstructured"
                     title="Smaller Screen"
                     width="{Long}768"/>
-                <medium
+                <tablet
                     jcr:primaryType="nt:unstructured"
-                    title="Tablet Screen"
-                    width="{Long}1024"/>
-                <large
-                    jcr:primaryType="nt:unstructured"
-                    title="desktop"
+                    title="Tablet"
                     width="{Long}1200"/>
             </breakpoints>
         </cq:responsive>

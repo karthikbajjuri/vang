@@ -1,4 +1,3 @@
-.cmp-teaser--team-member,
 .cmp-teaser--team-member-single {
 	.cmp-teaser {
 		.cmp-image__image {
@@ -12,33 +11,25 @@
 		}
 
 		&__title {
-			font: normal normal 900 25px/30px Mark Pro;
+			font: normal normal 900 18px/30px Mark Pro;
 			width: 100%;
 			margin: .5rem 0;
 			color: #000000;
 		}
 
+    &__title-link {
+			color: #000000;
+      font: normal normal 900 18px/30px Mark Pro;
+		}
+
 		&__description * {
-			font: normal normal normal 17px/20px Mark Pro;
+			font: normal normal normal 12px/14px Mark Pro;
 			width: 100%;
 			color: #000000;
 		}
 
 		&__action-link {
 			display: none;
-		}
-	}
-}
-
-@media screen and (min-width: $cmp-vang-breakpoint-s) {
-	.cmp-teaser--team-member {
-		.cmp-teaser {
-			max-width: 194px;
-			margin: 0 auto;
-
-			&__content {
-				padding: 0;
-			}
 		}
 	}
 }
@@ -60,7 +51,12 @@
 
 			&__title {
 				text-align: right;
+        font: normal normal 900 25px/30px Mark Pro;
 			}
+
+      &__description * {
+        font: normal normal normal 17px/20px Mark Pro;
+      }
 
 			&__image {
 				display: flex;
@@ -87,7 +83,7 @@
 	}
 }
 
-@media screen and (max-width: $cmp-vang-breakpoint-s) {
+@media screen and (max-width: ($cmp-vang-breakpoint-s - 1)) {
 	.cmp-teaser--team-member-single {
 		.cmp-teaser {
 			display: flex;
