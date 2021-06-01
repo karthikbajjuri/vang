@@ -1,5 +1,4 @@
 .vg-chart {
-
   &__title {
     padding-bottom: 55px;
     text-align: center;
@@ -78,6 +77,14 @@
 
 @media screen and (max-width: 768px) {
   .vg-chart {
+
+    &__title {
+      font: normal normal 900 40px/45px 'Mark Pro Heavy';
+      span {
+        display: block;
+      }
+    }
+
     .vg-leftchart {
       display: flex;
       flex-direction: column-reverse;
@@ -89,7 +96,7 @@
       }
 
       &__left {
-        padding: 0% 7%;
+        padding: 0% 35px;
       }
 
       &__left__about {
@@ -110,9 +117,10 @@
       }
 
       &__right__image {
-        width: 86%;
-        padding: 7%;
+        width: 100%;
+        padding: 0 35px;
         transform: none;
+        box-sizing: border-box;
       }
 
       &__left__image {
@@ -121,9 +129,10 @@
 
       &__right__content {
         transform: none;
-        padding: 0% 7%;
+        padding: 0% 35px;
         border: none;
         margin-top: 0px;
+        margin-bottom: 48.5px;
       }
 
       &__left__content {
