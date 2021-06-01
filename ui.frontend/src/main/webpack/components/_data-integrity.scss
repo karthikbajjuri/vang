@@ -17,10 +17,10 @@
     }
     &__main-title{
 		margin: 0;
-		font: normal normal 900 60px/72px Mark Pro Heavy;
+		font: normal normal 900 60px/70px Mark Pro Heavy;
     }
     &__subtitle{
-        font: normal normal normal 25px/35px Mark Pro;
+        font: normal normal normal 25px/35px Mark Pro Bold;
         letter-spacing: 0px;
         color: #000000;
     }
@@ -40,9 +40,9 @@
 
     &__description{
         float: left;
-        width: 55%;
+        width: 54%;
     	text-align: left;
-        font: normal normal normal 25px/35px Mark Pro;
+        font: normal normal normal 25px/30px Mark Pro Regular;
         letter-spacing: 0px;
         color: #000000;
 
@@ -84,7 +84,7 @@
         &__subtitle{
             width: 91%;
             text-align: left;
-            font: normal normal normal 18px/24px Mark Pro;
+            font: normal normal normal 18px/24px Mark Pro Bold;
             letter-spacing: 0px;
         }
         &__main-title{
@@ -108,7 +108,7 @@
             float: left;
             width: 92%;
         	text-align: left;
-            font: normal normal normal 18px/24px Mark Pro;
+            font: normal normal normal 18px/24px Mark Pro Regular;
             letter-spacing: 0px;
             p{
                 margin-bottom: 15px;
