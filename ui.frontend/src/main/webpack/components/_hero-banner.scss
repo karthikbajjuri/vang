@@ -1,9 +1,20 @@
+@media screen and (max-width: 767px){
 .cmp-teaser--hero-banner {
   .cmp-teaser {
+    .cmp-image__hero-banner-image  {
+      width: 260vw;
+      height: auto;
+      transform: translate(-40%, 0%);
+    }
 
-    .cmp-image__image  {
-      max-height: 980px;
-      object-fit: cover;
+    .cmp-teaser__action-container-link{
+      margin-top: 50px;
     }
   }
+}
+}
+@media screen and (min-width: 768px){
+.cmp-teaser__description-text{
+margin-top: 95px;
+}
 }
