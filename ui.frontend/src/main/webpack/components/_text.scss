@@ -10,6 +10,29 @@
 	text-align: center;
 }
 
+.front {
+	font: normal normal 900 92px/116px 'MARK PRO HEAVY';
+	float: left;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
+.back {
+	font: normal normal 900 92px/116px 'MARK PRO HEAVY';
+	float: left;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+.flip_numbers {
+    font: normal normal 900 92px/116px 'MARK PRO HEAVY';
+	float: left;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
 @media screen and (max-width: 768px) {
 	.number {
 		font: normal normal 900 55px/70px 'MARK PRO HEAVY';
