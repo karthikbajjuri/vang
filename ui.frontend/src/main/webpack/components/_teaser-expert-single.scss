@@ -89,5 +89,9 @@
 			display: flex;
 			flex-direction: column-reverse;
 		}
+		.cmp-image__hero-banner-image {
+		    transform:none;
+		    width:100%;
+		}
 	}
 }

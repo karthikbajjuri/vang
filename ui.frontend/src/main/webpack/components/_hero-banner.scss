@@ -1,6 +1,5 @@
 @media screen and (max-width: 767px){
-.cmp-teaser--hero-banner {
-  .cmp-teaser {
+ .cmp-teaser {
     .cmp-image__hero-banner-image  {
       width: 260vw;
       height: auto;
@@ -12,9 +11,8 @@
     }
   }
 }
-}
 @media screen and (min-width: 768px){
 .cmp-teaser__description-text{
-margin-top: 95px;
-}
+    margin-top: 95px;
+   }
 }
