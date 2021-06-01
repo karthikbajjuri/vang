@@ -17,9 +17,12 @@
 			color: #000000;
 		}
 
-    &__title-link {
+        &__title-link {
 			color: #000000;
-      font: normal normal 900 18px/30px Mark Pro;
+            font: normal normal 900 18px/30px Mark Pro;
+		}
+		.cmp-teaser__description-text {
+		    margin-top: 0px;
 		}
 
 		&__description * {
