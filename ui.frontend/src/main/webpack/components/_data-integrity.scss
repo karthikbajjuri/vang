@@ -24,6 +24,11 @@
         letter-spacing: 0px;
         color: #000000;
     }
+    &__subtitle-lineheight{
+        font: normal normal normal 25px/30px Mark Pro Bold;
+        letter-spacing: 0px;
+        color: #000000;
+    }
     &__quote-text{
         text-align: left;
         font: normal normal 900 74px/89px Mark Pro Heavy;
@@ -42,13 +47,16 @@
         float: left;
         width: 54%;
     	text-align: left;
-        font: normal normal normal 25px/30px Mark Pro Regular;
+        font: normal normal normal 25px/35px Mark Pro Regular;
         letter-spacing: 0px;
         color: #000000;
 
         i{
           font-style:italic;
         }
+    }
+    &__description-lineheight{
+        font:normal normal normal 25px/30px Mark Pro;
     }
     &__content__white{
         color:#FFFFFF;

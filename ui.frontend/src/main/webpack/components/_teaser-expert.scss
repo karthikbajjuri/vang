@@ -10,7 +10,7 @@
 		}
 
 		&__title {
-			font: normal normal 900 40px/45px 'Mark Pro Heavy';
+			font:normal normal 900 60px/70px 'Mark Pro Heavy';
 			color: #000000;
 			width: 100%;
 			margin-bottom: 17px;
@@ -57,12 +57,13 @@
 			}
 
 			&__title {
-				font: normal normal 900 60px/70px Mark Pro;
+				font: normal normal 900 60px/70px 'Mark Pro Heavy';
 				margin-bottom: 30px;
 			}
 
 			&__description {
 				margin-bottom: 60px;
+				width: 37vw;
 			}
 
 			&__description p {
@@ -101,4 +102,16 @@
 			clear: both !important;
 		}
 	}
+}
+
+
+@media screen and (max-width: $cmp-vang-breakpoint-s) {
+	.cmp-teaser--expert {
+		.cmp-teaser {
+	&__title {
+		font: normal normal 900 40px/45px Mark Pro Heavy;
+	}
+}
+	}
+	
 }
