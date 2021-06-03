@@ -17,7 +17,9 @@
       border-top: 5px solid $color-c20029;
       margin-top: 60px;
     }
-
+    &__left__content a:hover{
+      text-decoration: none;
+    }
     &__left__title {
       font-family: Mark Pro Heavy;
       line-height: 70px;
@@ -67,6 +69,9 @@
       transform: translate(-3%);
       border-top: 5px solid $color-c20029;
       margin-top: 60px;
+    }
+    &__right__content a:hover{
+      text-decoration: none;
     }
   }
 
