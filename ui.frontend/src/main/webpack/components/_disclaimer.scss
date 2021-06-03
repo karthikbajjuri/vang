@@ -1,13 +1,15 @@
    .vg-disclaimer{
-       
-    &__text-bold{
+       &__text{
+        padding: 5% 0% 5% 0%;
+        color: #707070;
+      
+    &-bold{
     font: normal normal bold 12px/14px Helvetica Neue Bold;
-    padding: 5% 7%;
-    color: #707070;
+
     }
-    &__text-normal{
+
+    &-normal{
     font: normal normal normal 12px/14px Helvetica Neue;
-    padding: 5% 7%;
-    color: #707070;
     }
+}
 }
