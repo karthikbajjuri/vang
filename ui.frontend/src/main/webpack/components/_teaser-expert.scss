@@ -6,7 +6,9 @@
 
 		&__content {
 			position: relative;
-			padding: 30px
+			padding: 30px 35px;
+      width:100%;
+      box-sizing: border-box
 		}
 
 		&__title {
@@ -51,13 +53,16 @@
 
 @media screen and (min-width: $cmp-vang-breakpoint-s) {
 	.cmp-teaser--expert {
+     flex: 1 1 60% ;
+
 		.cmp-teaser {
       display: flex;
       align-items: center;
       height: 100%;
 
 			&__content {
-				padding: 6.25rem 14%;
+				padding: 6.25rem 112px;
+        max-width: 821px;
 			}
 
 			&__title {
@@ -67,7 +72,6 @@
 
 			&__description {
 				margin-bottom: 60px;
-				width: 37vw;
 			}
 
 			&__description p {
@@ -117,5 +121,5 @@
 	}
 }
 	}
-	
+
 }
