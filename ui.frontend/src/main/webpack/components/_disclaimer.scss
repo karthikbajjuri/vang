@@ -1,15 +1,25 @@
-   .vg-disclaimer{
-       &__text{
-        padding: 5% 0% 5% 0%;
-        color: #707070;
-      
-    &-bold{
-    font: normal normal bold 12px/14px Helvetica Neue Bold;
+.vg-disclaimer {
+	padding: 2% 10%;
 
-    }
+	&__text {
 
-    &-normal{
-    font: normal normal normal 12px/14px Helvetica Neue;
-    }
+		color: #707070;
+
+		&-bold {
+			font: normal normal bold 12px/14px Helvetica Neue Bold;
+
+		}
+
+		&-normal {
+			font: normal normal normal 12px/14px Helvetica Neue;
+		}
+	}
 }
+
+
+
+@media screen and (max-width: $cmp-vang-breakpoint-s) {
+	.vg-disclaimer {
+    padding: 6%;
+	}
 }
