@@ -30,7 +30,7 @@
     &__subtitle-lineheight{
         font: normal normal normal 25px/30px Mark Pro Bold;
         letter-spacing: 0px;
-        color: #000000;
+        color: #ffffff;
     }
     &__quote-text{
         text-align: left;
@@ -93,10 +93,10 @@
             width: 100%;
         }
         &__subtitle{
-            width: 91%;
-            text-align: left;
+            font: normal normal normal 18px/24px Mark Pro;
+        }
+        &__subtitle-lineheight{
             font: normal normal normal 18px/24px Mark Pro Bold;
-            letter-spacing: 0px;
         }
         &__main-title{
             width: 98%;
