@@ -7,6 +7,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 21px;
+    font-family:Mark Pro;
     color: #000;
     max-width: 140px;
     line-height: normal;
@@ -16,7 +17,14 @@
       font-size: 57px;
       padding: 0;
       margin: 0;
+      font-family: Mark Pro Heavy;
     }
+    .tick{
+      font-family:Mark Pro;
+      }
+    .text1 {
+      font-family: Mark Pro Bold;
+      }
   }
   .line-chart {
     width: 100%;
@@ -56,7 +64,7 @@
   color: #000;
   max-width: 50%;
   margin-left: 5%;
-  font-family: Mark Pro,Bold;
+  font-family: Mark Pro Bold;
 }
 .graph-container {
     background-color: $color-ffffff;
