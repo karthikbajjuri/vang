@@ -105,8 +105,13 @@
             letter-spacing: -0.6px;
             margin-bottom: 20px;
         }
+        &__main-title-uplift{
+            font: normal normal 900 40px/45px Mark Pro Heavy;
+        }
         &__quote-text-width{
-            width:65vw;
+            width:75vw;
+            font-size: 45px;
+            line-height: 50px;
         }
         &__quote-text{
             width: 92%;
@@ -125,7 +130,9 @@
                 margin-bottom: 15px;
             }
         }
-
+        &__description-lineheight{
+             font: normal normal normal 18px/24px Mark Pro;
+        }
     }
 }
 @media (min-width: $cmp-vang-breakpoint-m) {
