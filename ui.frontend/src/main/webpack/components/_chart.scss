@@ -66,9 +66,9 @@
     }
 
     &__right__content {
-      transform: translate(-3%);
       border-top: 5px solid $color-c20029;
       margin-top: 60px;
+      margin-left: 60px;
     }
     &__right__content a:hover{
       text-decoration: none;
@@ -139,6 +139,7 @@
         border: none;
         margin-top: 0px;
         margin-bottom: 48.5px;
+        margin-left:0;
       }
 
       &__left__content {
