@@ -43,13 +43,13 @@
 		flex: 1 1 40%;
 
 		.cmp-teaser {
-			overflow: unset;
+			overflow: visible;
 			height: 100%;
 
 			&__content {
 				position: absolute;
 				bottom: 0;
-				top: unset;
+				top: auto;
 				left: -264px;
 				max-width: 200px;
 				text-align: right;
